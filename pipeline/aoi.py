@@ -27,8 +27,20 @@ ANIO_INICIO = 1985
 ANIO_FIN = 2026
 
 # Umbrales del método (ver docs/metodo.md)
-MNDWI_AGUA = 0.15      # por encima de esto, el píxel está bajo agua en esa escena
-NIR_AGUA = 0.25        # y además el NIR tiene que ser bajo: descarta nieve y costra de sal
+# Umbral de agua, calibrado contra las 388 poligonales `landuse=salt_pond` de OSM
+# sobre el Salar de Atacama (ver docs/metodo.md). Se probaron cinco criterios:
+#
+#   MNDWI>0.15 y NIR<0.25   recall 38.3%   falsos+ 5k
+#   MNDWI>0.15 y NIR<0.45   recall 46.6%   falsos+ 74k
+#   MNDWI>0.30 solo         recall 74.8%   falsos+ 58k   <- elegido
+#   MNDWI>0.15 solo         recall 81.6%   falsos+ 195k
+#
+# La condición sobre el NIR estaba puesta para descartar nieve, pero descartaba
+# la salmuera concentrada: en las piletas de Atacama el NIR es tan alto que
+# directamente satura. Un umbral de MNDWI más exigente hace el mismo trabajo
+# mejor. La nieve, que es transitoria, la filtra después la frecuencia anual:
+# no nieva el 80% del año.
+MNDWI_AGUA = 0.30
 WETFREQ_PILETA = 0.80  # fracción del año bajo agua: pileta operada
 WETFREQ_NATURAL = 0.20  # entre 0.20 y 0.80: superficie natural que respira con la estación
 
@@ -39,9 +51,13 @@ SALARES: dict[str, dict] = {
         "bbox": (-67.25, -25.55, -66.85, -25.15),
         "verificado": True,
         "operaciones": [
-            ("Fénix (FMC → Livent → Arcadium)", 1997),
+            ("Fénix (FMC → Livent → Arcadium → Rio Tinto)", 1997),
             ("Sal de Oro (POSCO)", 2024),
         ],
+        # Capacidades declaradas (Secretaría de Minería, informe litio jun-2025):
+        # Fénix ~60.000 Tn LCE con las ampliaciones proyectadas a 10 años;
+        # Sal de Oro 25.000 Tn de hidróxido en operación (21.990 Tn LCE) + planta
+        # de carbonato en construcción.
         "color": "#2a78d6",
         "color_oscuro": "#3987e5",
         "nota": "Donde ya está medido el InSAR. Fénix es la operación de salmuera "
@@ -55,9 +71,11 @@ SALARES: dict[str, dict] = {
         "bbox": (-66.86, -23.90, -66.58, -23.32),
         "verificado": True,
         "operaciones": [
-            ("Olaroz (Sales de Jujuy — Allkem → Arcadium)", 2015),
-            ("Cauchari-Olaroz (Exar — Lithium Americas / Ganfeng)", 2023),
+            ("Olaroz (Sales de Jujuy — Allkem → Arcadium → Rio Tinto / Toyota Tsusho)", 2015),
+            ("Cauchari-Olaroz (Exar — Ganfeng / Lithium Argentina / JEMSE)", 2023),
         ],
+        # Capacidades: Olaroz ~43.000 Tn LCE proyectadas; Cauchari-Olaroz planta de
+        # 40.000 Tn LCE, con piloto DLE anunciado (Secretaría de Minería, jun-2025).
         "color": "#1baf7a",
         "color_oscuro": "#199e70",
         "nota": "Dos operaciones de edades muy distintas en la misma cuenca: sirve "
@@ -68,13 +86,20 @@ SALARES: dict[str, dict] = {
         "jurisdiccion": "Salta, Argentina",
         "bbox": (-67.27, -24.26, -66.92, -23.86),
         "verificado": True,
+        # OJO: el Rincón NO está entre los seis proyectos argentinos en producción.
+        # El informe de la Secretaría de Minería (jun-2025) lo lista en dos entradas
+        # y ninguna es operación comercial: "Rincón" (Argosy Minerals) en Construcción,
+        # y "Salar del Rincón" (Rio Tinto) en Factibilidad. Lo que hay en el terreno es
+        # una planta piloto. La fecha de abajo es el arranque del piloto, no de una
+        # operación, y por eso este salar vale sobre todo como CONTROL NEGATIVO.
         "operaciones": [
-            ("Rincón (Rio Tinto, planta piloto → ampliación)", 2022),
+            ("Rincón (Argosy, planta piloto — no comercial)", 2022),
         ],
         "color": "#eda100",
         "color_oscuro": "#c98500",
-        "nota": "Operación joven: la serie larga debería mostrar salar casi virgen "
-                "hasta hace pocos años. Es el control negativo natural.",
+        "nota": "Sin producción comercial al 1er semestre de 2025. Es el control "
+                "negativo: si acá aparecen piletas al mismo ritmo que en un salar que "
+                "sí opera, el método está midiendo otra cosa.",
     },
     "centenario_ratones": {
         "nombre": "Salar Centenario-Ratones",

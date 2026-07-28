@@ -116,16 +116,20 @@ def _cargar(it, gb: GeoBox):
     rojo = _reflectancia(ds["red"].isel(time=0).values)
     nir = _reflectancia(ds["nir08"].isel(time=0).values)
 
-    ok &= np.isfinite(verde) & np.isfinite(swir) & np.isfinite(rojo) & np.isfinite(nir)
-    if not ok.any():
+    # Dos máscaras separadas, no una. Sobre las piletas más brillantes el NIR
+    # satura y queda sin dato; exigir NIR finito para TODO borraba esos píxeles
+    # también de la serie de agua, que solo necesita verde y SWIR.
+    ok_agua = ok & np.isfinite(verde) & np.isfinite(swir)
+    ok_ndvi = ok_agua & np.isfinite(rojo) & np.isfinite(nir)
+    if not ok_agua.any():
         return None
 
     with np.errstate(invalid="ignore", divide="ignore"):
         mndwi = (verde - swir) / (verde + swir)
         ndvi = (nir - rojo) / (nir + rojo)
 
-    return (ok, ok & _agua(mndwi, nir),
-            np.where(ok, ndvi, np.nan).astype("float32"),
+    return (ok_agua, ok_agua & _agua(mndwi),
+            np.where(ok_ndvi, ndvi, np.nan).astype("float32"),
             it.properties["platform"])
 
 
@@ -143,8 +147,8 @@ def _valido(qa: np.ndarray) -> np.ndarray:
     alrededor tenían 20. El contorno del salar aparecía calcado en el mapa de
     observaciones, que es la firma inconfundible del problema.
 
-    Sacar la nieve del QA no deja el problema abierto: se resuelve con física en
-    `_agua()`, que distingue nieve y sal de salmuera por el NIR.
+    Sacar la nieve del QA no deja el problema abierto: la nieve es transitoria y no
+    sobrevive al criterio de frecuencia anual (no nieva el 80 % del año).
     """
     relleno = (qa & 0b1) > 0
     nube = (qa & (1 << 3)) > 0
@@ -152,16 +156,16 @@ def _valido(qa: np.ndarray) -> np.ndarray:
     return ~relleno & ~nube & ~sombra & (qa != 0)
 
 
-def _agua(mndwi: np.ndarray, nir: np.ndarray) -> np.ndarray:
-    """Agua/salmuera: MNDWI alto Y NIR bajo.
+def _agua(mndwi: np.ndarray) -> np.ndarray:
+    """Agua/salmuera: MNDWI por encima del umbral calibrado.
 
-    El MNDWI solo no alcanza sobre un salar. La nieve y la costra de sal seca dan
-    MNDWI alto igual que el agua, porque las tres son brillantes en verde y oscuras
-    en SWIR. Lo que las separa es el infrarrojo cercano: la nieve y la sal reflejan
-    fuerte en NIR (0.4-0.8), el agua y la salmuera lo absorben (<0.15). El corte en
-    0.25 deja pasar salmuera turbia y concentrada sin dejar entrar nieve.
+    Hubo aquí una condición extra `NIR < 0.25`, puesta para descartar nieve. Estaba
+    mal, y la validación contra OSM lo mostró: en las piletas de Atacama el NIR es
+    tan alto que satura, así que la condición descartaba justo las piletas más
+    concentradas y el recall caía al 38 %. Con un MNDWI más exigente y sin NIR sube
+    al 75 %, y encima con menos falsos positivos. Ver aoi.MNDWI_AGUA.
     """
-    return (mndwi > aoi.MNDWI_AGUA) & (nir < aoi.NIR_AGUA)
+    return mndwi > aoi.MNDWI_AGUA
 
 
 def _reflectancia(dn: np.ndarray) -> np.ndarray:

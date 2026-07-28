@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T14:31:49+00:00",
+ "generated_at": "2026-07-28T15:03:15+00:00",
  "source": "Landsat 4/5/7/8/9 Collection-2 L2 vía Microsoft Planetary Computer",
  "metodo": "pileta = wetfreq > 0.80 en el año Y wetfreq < 0.20 en la línea de base",
  "data": [
@@ -147,6 +147,441 @@
      "cuantitativo": true,
      "agua_natural_permanente_km2": 0.91,
      "agua_estacional_km2": 37.53
+    },
+    {
+     "anio": 1998,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 90.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 11.37
+    },
+    {
+     "anio": 1999,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.12,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 80.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.1,
+     "agua_estacional_km2": 44.87
+    },
+    {
+     "anio": 2000,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 1.48,
+     "sensibilidad_km2": {
+      "0.65": 0.91,
+      "0.75": 0.21,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 81.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.83,
+     "agua_estacional_km2": 37.32
+    },
+    {
+     "anio": 2001,
+     "piletas_km2": 0.07,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 2.91,
+     "sensibilidad_km2": {
+      "0.65": 0.14,
+      "0.75": 0.09,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 86.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.56,
+     "agua_estacional_km2": 28.75
+    },
+    {
+     "anio": 2002,
+     "piletas_km2": 0.07,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 2.74,
+     "sensibilidad_km2": {
+      "0.65": 0.34,
+      "0.75": 0.12,
+      "0.85": 0.03
+     },
+     "px_medibles_pct": 73.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.32,
+     "agua_estacional_km2": 76.45
+    },
+    {
+     "anio": 2003,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 1.96,
+     "sensibilidad_km2": {
+      "0.65": 0.3,
+      "0.75": 0.02,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 85.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.26,
+     "agua_estacional_km2": 34.42
+    },
+    {
+     "anio": 2004,
+     "piletas_km2": 0.92,
+     "rectangularidad": 0.162,
+     "permanente_total_km2": 5.91,
+     "sensibilidad_km2": {
+      "0.65": 1.33,
+      "0.75": 0.99,
+      "0.85": 0.91
+     },
+     "px_medibles_pct": 87.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.42,
+     "agua_estacional_km2": 21.97
+    },
+    {
+     "anio": 2005,
+     "piletas_km2": 0.59,
+     "rectangularidad": 0.252,
+     "permanente_total_km2": 5.52,
+     "sensibilidad_km2": {
+      "0.65": 0.81,
+      "0.75": 0.65,
+      "0.85": 0.55
+     },
+     "px_medibles_pct": 76.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.54,
+     "agua_estacional_km2": 24.34
+    },
+    {
+     "anio": 2006,
+     "piletas_km2": 1.04,
+     "rectangularidad": 0.175,
+     "permanente_total_km2": 6.85,
+     "sensibilidad_km2": {
+      "0.65": 1.86,
+      "0.75": 1.16,
+      "0.85": 0.72
+     },
+     "px_medibles_pct": 84.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.87,
+     "agua_estacional_km2": 23.64
+    },
+    {
+     "anio": 2007,
+     "piletas_km2": 0.18,
+     "rectangularidad": 0.11,
+     "permanente_total_km2": 2.95,
+     "sensibilidad_km2": {
+      "0.65": 0.25,
+      "0.75": 0.19,
+      "0.85": 0.03
+     },
+     "px_medibles_pct": 84.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.75,
+     "agua_estacional_km2": 19.68
+    },
+    {
+     "anio": 2008,
+     "piletas_km2": 0.17,
+     "rectangularidad": 0.109,
+     "permanente_total_km2": 3.99,
+     "sensibilidad_km2": {
+      "0.65": 0.22,
+      "0.75": 0.21,
+      "0.85": 0.12
+     },
+     "px_medibles_pct": 80.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.3,
+     "agua_estacional_km2": 35.35
+    },
+    {
+     "anio": 2009,
+     "piletas_km2": 1.47,
+     "rectangularidad": 0.054,
+     "permanente_total_km2": 4.39,
+     "sensibilidad_km2": {
+      "0.65": 1.52,
+      "0.75": 1.49,
+      "0.85": 1.44
+     },
+     "px_medibles_pct": 84.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.29,
+     "agua_estacional_km2": 16.91
+    },
+    {
+     "anio": 2010,
+     "piletas_km2": 0.44,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 3.37,
+     "sensibilidad_km2": {
+      "0.65": 0.58,
+      "0.75": 0.47,
+      "0.85": 0.42
+     },
+     "px_medibles_pct": 82.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.8,
+     "agua_estacional_km2": 21.84
+    },
+    {
+     "anio": 2011,
+     "piletas_km2": 0.72,
+     "rectangularidad": 0.419,
+     "permanente_total_km2": 11.12,
+     "sensibilidad_km2": {
+      "0.65": 0.88,
+      "0.75": 0.77,
+      "0.85": 0.68
+     },
+     "px_medibles_pct": 72.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 5.84,
+     "agua_estacional_km2": 37.69
+    },
+    {
+     "anio": 2012,
+     "piletas_km2": 8.92,
+     "rectangularidad": 0.034,
+     "permanente_total_km2": 30.12,
+     "sensibilidad_km2": {
+      "0.65": 10.03,
+      "0.75": 9.34,
+      "0.85": 6.31
+     },
+     "px_medibles_pct": 79.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 9.49,
+     "agua_estacional_km2": 60.59
+    },
+    {
+     "anio": 2013,
+     "piletas_km2": 1.37,
+     "rectangularidad": 0.449,
+     "permanente_total_km2": 8.73,
+     "sensibilidad_km2": {
+      "0.65": 8.91,
+      "0.75": 4.19,
+      "0.85": 0.18
+     },
+     "px_medibles_pct": 80.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.46,
+     "agua_estacional_km2": 58.05
+    },
+    {
+     "anio": 2014,
+     "piletas_km2": 0.18,
+     "rectangularidad": 0.765,
+     "permanente_total_km2": 12.12,
+     "sensibilidad_km2": {
+      "0.65": 0.39,
+      "0.75": 0.27,
+      "0.85": 0.09
+     },
+     "px_medibles_pct": 89.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 6.68,
+     "agua_estacional_km2": 21.22
+    },
+    {
+     "anio": 2015,
+     "piletas_km2": 2.81,
+     "rectangularidad": 0.169,
+     "permanente_total_km2": 13.17,
+     "sensibilidad_km2": {
+      "0.65": 3.23,
+      "0.75": 2.96,
+      "0.85": 2.31
+     },
+     "px_medibles_pct": 84.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 5.62,
+     "agua_estacional_km2": 22.94
+    },
+    {
+     "anio": 2016,
+     "piletas_km2": 0.08,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 5.63,
+     "sensibilidad_km2": {
+      "0.65": 0.08,
+      "0.75": 0.08,
+      "0.85": 0.08
+     },
+     "px_medibles_pct": 95.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.5,
+     "agua_estacional_km2": 18.95
+    },
+    {
+     "anio": 2017,
+     "piletas_km2": 2.0,
+     "rectangularidad": 0.051,
+     "permanente_total_km2": 12.88,
+     "sensibilidad_km2": {
+      "0.65": 2.65,
+      "0.75": 2.13,
+      "0.85": 1.89
+     },
+     "px_medibles_pct": 85.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 5.28,
+     "agua_estacional_km2": 33.73
+    },
+    {
+     "anio": 2018,
+     "piletas_km2": 0.41,
+     "rectangularidad": 0.435,
+     "permanente_total_km2": 12.56,
+     "sensibilidad_km2": {
+      "0.65": 0.54,
+      "0.75": 0.43,
+      "0.85": 0.34
+     },
+     "px_medibles_pct": 83.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 6.14,
+     "agua_estacional_km2": 26.02
+    },
+    {
+     "anio": 2019,
+     "piletas_km2": 1.56,
+     "rectangularidad": 0.016,
+     "permanente_total_km2": 14.91,
+     "sensibilidad_km2": {
+      "0.65": 1.91,
+      "0.75": 1.65,
+      "0.85": 1.46
+     },
+     "px_medibles_pct": 88.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 5.2,
+     "agua_estacional_km2": 43.37
+    },
+    {
+     "anio": 2020,
+     "piletas_km2": 0.41,
+     "rectangularidad": 0.434,
+     "permanente_total_km2": 7.9,
+     "sensibilidad_km2": {
+      "0.65": 1.05,
+      "0.75": 0.53,
+      "0.85": 0.15
+     },
+     "px_medibles_pct": 90.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.32,
+     "agua_estacional_km2": 29.87
+    },
+    {
+     "anio": 2021,
+     "piletas_km2": 1.31,
+     "rectangularidad": 0.17,
+     "permanente_total_km2": 8.24,
+     "sensibilidad_km2": {
+      "0.65": 1.58,
+      "0.75": 1.35,
+      "0.85": 1.28
+     },
+     "px_medibles_pct": 96.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.15,
+     "agua_estacional_km2": 32.6
+    },
+    {
+     "anio": 2022,
+     "piletas_km2": 2.29,
+     "rectangularidad": 0.137,
+     "permanente_total_km2": 15.92,
+     "sensibilidad_km2": {
+      "0.65": 3.21,
+      "0.75": 2.53,
+      "0.85": 1.93
+     },
+     "px_medibles_pct": 93.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.89,
+     "agua_estacional_km2": 27.95
+    },
+    {
+     "anio": 2023,
+     "piletas_km2": 2.53,
+     "rectangularidad": 0.089,
+     "permanente_total_km2": 12.98,
+     "sensibilidad_km2": {
+      "0.65": 4.14,
+      "0.75": 3.01,
+      "0.85": 2.18
+     },
+     "px_medibles_pct": 94.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.4,
+     "agua_estacional_km2": 24.11
+    },
+    {
+     "anio": 2024,
+     "piletas_km2": 1.96,
+     "rectangularidad": 0.557,
+     "permanente_total_km2": 9.84,
+     "sensibilidad_km2": {
+      "0.65": 3.6,
+      "0.75": 2.41,
+      "0.85": 1.85
+     },
+     "px_medibles_pct": 87.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.3,
+     "agua_estacional_km2": 32.45
+    },
+    {
+     "anio": 2025,
+     "piletas_km2": 3.11,
+     "rectangularidad": 0.358,
+     "permanente_total_km2": 10.48,
+     "sensibilidad_km2": {
+      "0.65": 4.62,
+      "0.75": 3.5,
+      "0.85": 2.53
+     },
+     "px_medibles_pct": 94.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.42,
+     "agua_estacional_km2": 30.85
+    },
+    {
+     "anio": 2026,
+     "piletas_km2": 6.97,
+     "rectangularidad": 0.412,
+     "permanente_total_km2": 19.94,
+     "sensibilidad_km2": {
+      "0.65": 8.56,
+      "0.75": 7.6,
+      "0.85": 6.39
+     },
+     "px_medibles_pct": 86.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.5,
+     "agua_estacional_km2": 26.95
     }
    ],
    "validacion_osm": {
@@ -155,6 +590,1537 @@
    },
    "control_negativo": {
     "lagunas_naturales_km2": 12.89,
+    "fraccion_clasificada_como_pileta": 0.009
+   }
+  },
+  {
+   "salar": "atacama",
+   "nombre": "Salar de Atacama (sector piletas)",
+   "jurisdiccion": "Antofagasta, Chile",
+   "operaciones": [
+    [
+     "SQM (Salar)",
+     1984
+    ],
+    [
+     "Albemarle (ex Rockwood / SCL)",
+     1984
+    ]
+   ],
+   "bbox_verificado": true,
+   "anios_base": [
+    1986,
+    1988,
+    1989,
+    1990,
+    1991,
+    1993
+   ],
+   "base_previa_a_operacion": false,
+   "serie": [
+    {
+     "anio": 1986,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 2.81,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.51,
+     "agua_estacional_km2": 4.62
+    },
+    {
+     "anio": 1988,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 1.2,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 92.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.15,
+     "agua_estacional_km2": 3.92
+    },
+    {
+     "anio": 1989,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 2.99,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.55,
+     "agua_estacional_km2": 4.78
+    },
+    {
+     "anio": 1990,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 2.64,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 96.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.22,
+     "agua_estacional_km2": 4.86
+    },
+    {
+     "anio": 1991,
+     "piletas_km2": 0.14,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 3.55,
+     "sensibilidad_km2": {
+      "0.65": 0.14,
+      "0.75": 0.14,
+      "0.85": 0.14
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.97,
+     "agua_estacional_km2": 4.84
+    },
+    {
+     "anio": 1992,
+     "piletas_km2": 0.12,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 3.23,
+     "sensibilidad_km2": {
+      "0.65": 0.13,
+      "0.75": 0.13,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.64,
+     "agua_estacional_km2": 5.46
+    },
+    {
+     "anio": 1993,
+     "piletas_km2": 0.12,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 3.49,
+     "sensibilidad_km2": {
+      "0.65": 0.12,
+      "0.75": 0.12,
+      "0.85": 0.1
+     },
+     "px_medibles_pct": 99.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.86,
+     "agua_estacional_km2": 5.44
+    },
+    {
+     "anio": 1995,
+     "piletas_km2": 2.91,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 5.48,
+     "sensibilidad_km2": {
+      "0.65": 3.24,
+      "0.75": 3.01,
+      "0.85": 2.14
+     },
+     "px_medibles_pct": 98.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.06,
+     "agua_estacional_km2": 8.84
+    },
+    {
+     "anio": 1996,
+     "piletas_km2": 0.97,
+     "rectangularidad": 0.532,
+     "permanente_total_km2": 2.69,
+     "sensibilidad_km2": {
+      "0.65": 1.96,
+      "0.75": 0.97,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.43,
+     "agua_estacional_km2": 12.29
+    },
+    {
+     "anio": 1997,
+     "piletas_km2": 7.06,
+     "rectangularidad": 0.959,
+     "permanente_total_km2": 10.8,
+     "sensibilidad_km2": {
+      "0.65": 9.13,
+      "0.75": 8.11,
+      "0.85": 5.43
+     },
+     "px_medibles_pct": 99.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.78,
+     "agua_estacional_km2": 10.1
+    },
+    {
+     "anio": 1998,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.22,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 97.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 20.82
+    },
+    {
+     "anio": 1999,
+     "piletas_km2": 0.15,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 1.82,
+     "sensibilidad_km2": {
+      "0.65": 5.49,
+      "0.75": 1.01,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 97.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.39,
+     "agua_estacional_km2": 22.12
+    },
+    {
+     "anio": 2000,
+     "piletas_km2": 6.81,
+     "rectangularidad": 0.945,
+     "permanente_total_km2": 11.53,
+     "sensibilidad_km2": {
+      "0.65": 8.08,
+      "0.75": 7.15,
+      "0.85": 6.39
+     },
+     "px_medibles_pct": 98.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.03,
+     "agua_estacional_km2": 9.55
+    },
+    {
+     "anio": 2001,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.05,
+     "sensibilidad_km2": {
+      "0.65": 1.7,
+      "0.75": 0.05,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.03,
+     "agua_estacional_km2": 24.6
+    },
+    {
+     "anio": 2002,
+     "piletas_km2": 0.04,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 0.43,
+     "sensibilidad_km2": {
+      "0.65": 5.01,
+      "0.75": 1.63,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.18,
+     "agua_estacional_km2": 25.4
+    },
+    {
+     "anio": 2003,
+     "piletas_km2": 5.75,
+     "rectangularidad": 0.87,
+     "permanente_total_km2": 8.67,
+     "sensibilidad_km2": {
+      "0.65": 8.44,
+      "0.75": 6.87,
+      "0.85": 3.08
+     },
+     "px_medibles_pct": 98.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.01,
+     "agua_estacional_km2": 16.49
+    },
+    {
+     "anio": 2004,
+     "piletas_km2": 7.09,
+     "rectangularidad": 0.847,
+     "permanente_total_km2": 11.01,
+     "sensibilidad_km2": {
+      "0.65": 8.57,
+      "0.75": 7.82,
+      "0.85": 5.6
+     },
+     "px_medibles_pct": 98.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.44,
+     "agua_estacional_km2": 8.72
+    },
+    {
+     "anio": 2005,
+     "piletas_km2": 6.51,
+     "rectangularidad": 0.705,
+     "permanente_total_km2": 11.05,
+     "sensibilidad_km2": {
+      "0.65": 8.03,
+      "0.75": 6.99,
+      "0.85": 5.37
+     },
+     "px_medibles_pct": 98.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.75,
+     "agua_estacional_km2": 9.34
+    },
+    {
+     "anio": 2006,
+     "piletas_km2": 5.32,
+     "rectangularidad": 0.814,
+     "permanente_total_km2": 8.76,
+     "sensibilidad_km2": {
+      "0.65": 9.3,
+      "0.75": 7.08,
+      "0.85": 1.86
+     },
+     "px_medibles_pct": 98.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.06,
+     "agua_estacional_km2": 17.48
+    },
+    {
+     "anio": 2007,
+     "piletas_km2": 5.95,
+     "rectangularidad": 0.763,
+     "permanente_total_km2": 10.43,
+     "sensibilidad_km2": {
+      "0.65": 7.37,
+      "0.75": 6.39,
+      "0.85": 4.91
+     },
+     "px_medibles_pct": 98.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.58,
+     "agua_estacional_km2": 10.38
+    },
+    {
+     "anio": 2008,
+     "piletas_km2": 6.74,
+     "rectangularidad": 0.629,
+     "permanente_total_km2": 11.08,
+     "sensibilidad_km2": {
+      "0.65": 8.38,
+      "0.75": 7.28,
+      "0.85": 5.9
+     },
+     "px_medibles_pct": 97.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.61,
+     "agua_estacional_km2": 10.07
+    },
+    {
+     "anio": 2009,
+     "piletas_km2": 5.38,
+     "rectangularidad": 0.494,
+     "permanente_total_km2": 9.89,
+     "sensibilidad_km2": {
+      "0.65": 6.48,
+      "0.75": 5.87,
+      "0.85": 4.44
+     },
+     "px_medibles_pct": 97.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.51,
+     "agua_estacional_km2": 15.23
+    },
+    {
+     "anio": 2010,
+     "piletas_km2": 10.04,
+     "rectangularidad": 0.691,
+     "permanente_total_km2": 14.43,
+     "sensibilidad_km2": {
+      "0.65": 11.97,
+      "0.75": 10.85,
+      "0.85": 8.55
+     },
+     "px_medibles_pct": 97.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.44,
+     "agua_estacional_km2": 15.66
+    },
+    {
+     "anio": 2011,
+     "piletas_km2": 9.08,
+     "rectangularidad": 0.837,
+     "permanente_total_km2": 14.17,
+     "sensibilidad_km2": {
+      "0.65": 11.25,
+      "0.75": 10.07,
+      "0.85": 7.66
+     },
+     "px_medibles_pct": 97.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.48,
+     "agua_estacional_km2": 24.08
+    },
+    {
+     "anio": 2012,
+     "piletas_km2": 9.5,
+     "rectangularidad": 0.58,
+     "permanente_total_km2": 15.28,
+     "sensibilidad_km2": {
+      "0.65": 12.71,
+      "0.75": 10.71,
+      "0.85": 7.72
+     },
+     "px_medibles_pct": 97.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.58,
+     "agua_estacional_km2": 26.23
+    },
+    {
+     "anio": 2013,
+     "piletas_km2": 7.39,
+     "rectangularidad": 0.797,
+     "permanente_total_km2": 14.44,
+     "sensibilidad_km2": {
+      "0.65": 10.9,
+      "0.75": 8.66,
+      "0.85": 5.32
+     },
+     "px_medibles_pct": 97.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.55,
+     "agua_estacional_km2": 24.74
+    },
+    {
+     "anio": 2014,
+     "piletas_km2": 9.26,
+     "rectangularidad": 0.935,
+     "permanente_total_km2": 13.49,
+     "sensibilidad_km2": {
+      "0.65": 18.02,
+      "0.75": 12.42,
+      "0.85": 6.09
+     },
+     "px_medibles_pct": 98.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.65,
+     "agua_estacional_km2": 38.38
+    },
+    {
+     "anio": 2015,
+     "piletas_km2": 13.19,
+     "rectangularidad": 0.197,
+     "permanente_total_km2": 19.92,
+     "sensibilidad_km2": {
+      "0.65": 20.08,
+      "0.75": 16.13,
+      "0.85": 8.08
+     },
+     "px_medibles_pct": 98.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.36,
+     "agua_estacional_km2": 26.84
+    },
+    {
+     "anio": 2016,
+     "piletas_km2": 6.13,
+     "rectangularidad": 0.734,
+     "permanente_total_km2": 11.14,
+     "sensibilidad_km2": {
+      "0.65": 8.13,
+      "0.75": 6.75,
+      "0.85": 4.01
+     },
+     "px_medibles_pct": 96.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.08,
+     "agua_estacional_km2": 21.06
+    },
+    {
+     "anio": 2017,
+     "piletas_km2": 6.77,
+     "rectangularidad": 0.718,
+     "permanente_total_km2": 14.61,
+     "sensibilidad_km2": {
+      "0.65": 12.33,
+      "0.75": 8.61,
+      "0.85": 4.31
+     },
+     "px_medibles_pct": 98.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.54,
+     "agua_estacional_km2": 32.39
+    },
+    {
+     "anio": 2018,
+     "piletas_km2": 9.25,
+     "rectangularidad": 0.458,
+     "permanente_total_km2": 14.51,
+     "sensibilidad_km2": {
+      "0.65": 15.44,
+      "0.75": 11.51,
+      "0.85": 6.08
+     },
+     "px_medibles_pct": 98.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.44,
+     "agua_estacional_km2": 27.47
+    },
+    {
+     "anio": 2019,
+     "piletas_km2": 9.76,
+     "rectangularidad": 0.527,
+     "permanente_total_km2": 16.28,
+     "sensibilidad_km2": {
+      "0.65": 17.89,
+      "0.75": 12.96,
+      "0.85": 6.48
+     },
+     "px_medibles_pct": 98.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.49,
+     "agua_estacional_km2": 32.8
+    },
+    {
+     "anio": 2020,
+     "piletas_km2": 9.31,
+     "rectangularidad": 0.554,
+     "permanente_total_km2": 15.8,
+     "sensibilidad_km2": {
+      "0.65": 15.98,
+      "0.75": 11.45,
+      "0.85": 6.44
+     },
+     "px_medibles_pct": 98.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.28,
+     "agua_estacional_km2": 31.1
+    },
+    {
+     "anio": 2021,
+     "piletas_km2": 7.27,
+     "rectangularidad": 0.658,
+     "permanente_total_km2": 13.13,
+     "sensibilidad_km2": {
+      "0.65": 12.45,
+      "0.75": 8.85,
+      "0.85": 5.47
+     },
+     "px_medibles_pct": 99.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.25,
+     "agua_estacional_km2": 32.81
+    },
+    {
+     "anio": 2022,
+     "piletas_km2": 5.5,
+     "rectangularidad": 0.596,
+     "permanente_total_km2": 11.0,
+     "sensibilidad_km2": {
+      "0.65": 11.3,
+      "0.75": 7.5,
+      "0.85": 3.76
+     },
+     "px_medibles_pct": 98.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.06,
+     "agua_estacional_km2": 31.67
+    },
+    {
+     "anio": 2023,
+     "piletas_km2": 7.77,
+     "rectangularidad": 0.529,
+     "permanente_total_km2": 12.38,
+     "sensibilidad_km2": {
+      "0.65": 14.3,
+      "0.75": 10.12,
+      "0.85": 4.95
+     },
+     "px_medibles_pct": 98.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 2.2,
+     "agua_estacional_km2": 32.18
+    },
+    {
+     "anio": 2024,
+     "piletas_km2": 4.91,
+     "rectangularidad": 0.499,
+     "permanente_total_km2": 9.29,
+     "sensibilidad_km2": {
+      "0.65": 10.21,
+      "0.75": 6.54,
+      "0.85": 3.15
+     },
+     "px_medibles_pct": 98.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.73,
+     "agua_estacional_km2": 27.81
+    },
+    {
+     "anio": 2025,
+     "piletas_km2": 6.91,
+     "rectangularidad": 0.733,
+     "permanente_total_km2": 12.01,
+     "sensibilidad_km2": {
+      "0.65": 13.04,
+      "0.75": 9.16,
+      "0.85": 5.16
+     },
+     "px_medibles_pct": 99.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.87,
+     "agua_estacional_km2": 27.99
+    },
+    {
+     "anio": 2026,
+     "piletas_km2": 2.1,
+     "rectangularidad": 0.974,
+     "permanente_total_km2": 4.49,
+     "sensibilidad_km2": {
+      "0.65": 2.61,
+      "0.75": 2.1,
+      "0.85": 1.45
+     },
+     "px_medibles_pct": 93.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 1.1,
+     "agua_estacional_km2": 19.21
+    }
+   ],
+   "validacion_osm": {
+    "anio": 2026,
+    "referencia": "landuse=salt_pond",
+    "poligonos_osm_km2": 42.98,
+    "precision": 0.749,
+    "recall": 0.037,
+    "iou": 0.036
+   },
+   "control_negativo": {
+    "lagunas_naturales_km2": 11.18,
+    "fraccion_clasificada_como_pileta": 0.025
+   }
+  },
+  {
+   "salar": "olaroz_cauchari",
+   "nombre": "Salar de Olaroz-Cauchari",
+   "jurisdiccion": "Jujuy, Argentina",
+   "operaciones": [
+    [
+     "Olaroz (Sales de Jujuy — Allkem → Arcadium)",
+     2015
+    ],
+    [
+     "Cauchari-Olaroz (Exar — Lithium Americas / Ganfeng)",
+     2023
+    ]
+   ],
+   "bbox_verificado": true,
+   "anios_base": [
+    1988,
+    1990,
+    2004,
+    2007,
+    2009,
+    2010
+   ],
+   "base_previa_a_operacion": true,
+   "serie": [
+    {
+     "anio": 1988,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 79.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 43.44
+    },
+    {
+     "anio": 1990,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 62.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.52
+    },
+    {
+     "anio": 2004,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 32.67
+    },
+    {
+     "anio": 2005,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 62.35
+    },
+    {
+     "anio": 2006,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 76.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 71.67
+    },
+    {
+     "anio": 2007,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 10.9
+    },
+    {
+     "anio": 2008,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 108.66
+    },
+    {
+     "anio": 2009,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 90.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 2.95
+    },
+    {
+     "anio": 2010,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 89.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.7
+    },
+    {
+     "anio": 2011,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.07,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 86.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 157.41
+    },
+    {
+     "anio": 2012,
+     "piletas_km2": 0.14,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 2.15,
+     "sensibilidad_km2": {
+      "0.65": 0.21,
+      "0.75": 0.14,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 86.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 124.8
+    },
+    {
+     "anio": 2013,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.1,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 90.75
+    },
+    {
+     "anio": 2014,
+     "piletas_km2": 0.67,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 0.77,
+     "sensibilidad_km2": {
+      "0.65": 0.75,
+      "0.75": 0.7,
+      "0.85": 0.64
+     },
+     "px_medibles_pct": 87.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 42.94
+    },
+    {
+     "anio": 2015,
+     "piletas_km2": 0.21,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 0.53,
+     "sensibilidad_km2": {
+      "0.65": 0.27,
+      "0.75": 0.23,
+      "0.85": 0.15
+     },
+     "px_medibles_pct": 87.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 81.59
+    },
+    {
+     "anio": 2017,
+     "piletas_km2": 0.68,
+     "rectangularidad": 0.181,
+     "permanente_total_km2": 1.05,
+     "sensibilidad_km2": {
+      "0.65": 0.77,
+      "0.75": 0.7,
+      "0.85": 0.64
+     },
+     "px_medibles_pct": 87.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 42.33
+    },
+    {
+     "anio": 2018,
+     "piletas_km2": 1.42,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 1.74,
+     "sensibilidad_km2": {
+      "0.65": 1.45,
+      "0.75": 1.45,
+      "0.85": 1.36
+     },
+     "px_medibles_pct": 88.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 84.88
+    },
+    {
+     "anio": 2019,
+     "piletas_km2": 0.8,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 1.03,
+     "sensibilidad_km2": {
+      "0.65": 0.89,
+      "0.75": 0.82,
+      "0.85": 0.66
+     },
+     "px_medibles_pct": 90.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 103.31
+    },
+    {
+     "anio": 2020,
+     "piletas_km2": 4.26,
+     "rectangularidad": 0.121,
+     "permanente_total_km2": 4.69,
+     "sensibilidad_km2": {
+      "0.65": 4.81,
+      "0.75": 4.42,
+      "0.85": 4.01
+     },
+     "px_medibles_pct": 89.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 83.51
+    },
+    {
+     "anio": 2021,
+     "piletas_km2": 4.91,
+     "rectangularidad": 0.084,
+     "permanente_total_km2": 6.2,
+     "sensibilidad_km2": {
+      "0.65": 5.22,
+      "0.75": 5.06,
+      "0.85": 4.59
+     },
+     "px_medibles_pct": 89.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 126.62
+    },
+    {
+     "anio": 2022,
+     "piletas_km2": 2.36,
+     "rectangularidad": 0.144,
+     "permanente_total_km2": 4.26,
+     "sensibilidad_km2": {
+      "0.65": 4.14,
+      "0.75": 2.48,
+      "0.85": 1.86
+     },
+     "px_medibles_pct": 90.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 127.51
+    },
+    {
+     "anio": 2023,
+     "piletas_km2": 0.95,
+     "rectangularidad": 0.225,
+     "permanente_total_km2": 2.07,
+     "sensibilidad_km2": {
+      "0.65": 1.02,
+      "0.75": 0.96,
+      "0.85": 0.9
+     },
+     "px_medibles_pct": 85.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 20.94
+    },
+    {
+     "anio": 2024,
+     "piletas_km2": 0.97,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 1.76,
+     "sensibilidad_km2": {
+      "0.65": 0.99,
+      "0.75": 0.98,
+      "0.85": 0.9
+     },
+     "px_medibles_pct": 85.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 63.52
+    },
+    {
+     "anio": 2025,
+     "piletas_km2": 2.28,
+     "rectangularidad": 0.098,
+     "permanente_total_km2": 4.45,
+     "sensibilidad_km2": {
+      "0.65": 2.81,
+      "0.75": 2.49,
+      "0.85": 1.92
+     },
+     "px_medibles_pct": 90.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 20.66
+    }
+   ],
+   "validacion_osm": {
+    "referencia": null,
+    "nota": "OSM no tiene las piletas digitalizadas en este salar"
+   },
+   "control_negativo": {
+    "lagunas_naturales_km2": 3.71,
+    "fraccion_clasificada_como_pileta": 0.062
+   }
+  },
+  {
+   "salar": "rincon",
+   "nombre": "Salar del Rincón",
+   "jurisdiccion": "Salta, Argentina",
+   "operaciones": [
+    [
+     "Rincón (Rio Tinto, planta piloto → ampliación)",
+     2022
+    ]
+   ],
+   "bbox_verificado": true,
+   "anios_base": [
+    1986,
+    1988,
+    1989,
+    1990,
+    2006,
+    2016
+   ],
+   "base_previa_a_operacion": true,
+   "serie": [
+    {
+     "anio": 1986,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 50.3,
+     "cuantitativo": false,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.59
+    },
+    {
+     "anio": 1988,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 88.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.35
+    },
+    {
+     "anio": 1989,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 67.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 1.94
+    },
+    {
+     "anio": 1990,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 62.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 6.58
+    },
+    {
+     "anio": 1992,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 75.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 7.6
+    },
+    {
+     "anio": 2006,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 86.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.33
+    },
+    {
+     "anio": 2016,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.11,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.11,
+     "agua_estacional_km2": 0.17
+    },
+    {
+     "anio": 2023,
+     "piletas_km2": 0.17,
+     "rectangularidad": 0.0,
+     "permanente_total_km2": 0.25,
+     "sensibilidad_km2": {
+      "0.65": 0.21,
+      "0.75": 0.17,
+      "0.85": 0.11
+     },
+     "px_medibles_pct": 75.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.7
+    },
+    {
+     "anio": 2024,
+     "piletas_km2": 0.24,
+     "rectangularidad": 0.771,
+     "permanente_total_km2": 0.33,
+     "sensibilidad_km2": {
+      "0.65": 0.3,
+      "0.75": 0.24,
+      "0.85": 0.2
+     },
+     "px_medibles_pct": 94.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.03,
+     "agua_estacional_km2": 0.5
+    },
+    {
+     "anio": 2026,
+     "piletas_km2": 0.2,
+     "rectangularidad": 1.0,
+     "permanente_total_km2": 0.32,
+     "sensibilidad_km2": {
+      "0.65": 0.23,
+      "0.75": 0.2,
+      "0.85": 0.2
+     },
+     "px_medibles_pct": 82.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 0.68
+    }
+   ],
+   "validacion_osm": {
+    "referencia": null,
+    "nota": "OSM no tiene las piletas digitalizadas en este salar"
+   },
+   "control_negativo": {
+    "lagunas_naturales_km2": 0.12,
+    "fraccion_clasificada_como_pileta": 0.0
+   }
+  },
+  {
+   "salar": "centenario_ratones",
+   "nombre": "Salar Centenario-Ratones",
+   "jurisdiccion": "Salta, Argentina",
+   "operaciones": [
+    [
+     "Centenario (Eramet)",
+     2024
+    ]
+   ],
+   "bbox_verificado": false,
+   "anios_base": [
+    1986,
+    1988,
+    2007,
+    2009,
+    2016,
+    2020
+   ],
+   "base_previa_a_operacion": true,
+   "serie": [
+    {
+     "anio": 1986,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.05,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 1.12
+    },
+    {
+     "anio": 1988,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 0.99
+    },
+    {
+     "anio": 1989,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.05,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 1.65
+    },
+    {
+     "anio": 1990,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 2.53
+    },
+    {
+     "anio": 1991,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.06,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 1.12
+    },
+    {
+     "anio": 1992,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 95.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 6.1
+    },
+    {
+     "anio": 1993,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.7,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 2.77
+    },
+    {
+     "anio": 2004,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 2.14
+    },
+    {
+     "anio": 2005,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.09,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 1.11
+    },
+    {
+     "anio": 2006,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 1.43
+    },
+    {
+     "anio": 2007,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.02,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 0.59
+    },
+    {
+     "anio": 2008,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.05,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 4.34
+    },
+    {
+     "anio": 2009,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.01,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 100.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 0.22
+    },
+    {
+     "anio": 2010,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.01,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 100.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 1.33
+    },
+    {
+     "anio": 2011,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.08,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.9,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 1.26
+    },
+    {
+     "anio": 2012,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.1,
+     "sensibilidad_km2": {
+      "0.65": 0.03,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 99.4,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.02,
+     "agua_estacional_km2": 3.87
+    },
+    {
+     "anio": 2013,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 98.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 7.19
+    },
+    {
+     "anio": 2014,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 54.7,
+     "cuantitativo": false,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 1.55
+    },
+    {
+     "anio": 2016,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.01,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 93.2,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 0.46
+    },
+    {
+     "anio": 2019,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.0,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 56.4,
+     "cuantitativo": false,
+     "agua_natural_permanente_km2": 0.0,
+     "agua_estacional_km2": 1.62
+    },
+    {
+     "anio": 2020,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 0.04,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 89.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.01,
+     "agua_estacional_km2": 1.58
+    }
+   ],
+   "validacion_osm": {
+    "referencia": null,
+    "nota": "OSM no tiene las piletas digitalizadas en este salar"
+   },
+   "control_negativo": {
+    "lagunas_naturales_km2": 3.65,
     "fraccion_clasificada_como_pileta": 0.0
    }
   }

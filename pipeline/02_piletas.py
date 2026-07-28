@@ -65,6 +65,10 @@ MIN_OBS = 10
 # Un año se considera cuantitativo si esta fracción del AOI llega a MIN_OBS.
 FIABLE = 0.60
 
+# El año calendario en curso está incompleto y su frecuencia anual no es
+# comparable con la de un año cerrado.
+ANIO_EN_CURSO = datetime.now(timezone.utc).year
+
 # Umbrales alternativos que se reportan al lado del elegido. Con ~10 pasadas por año,
 # exigir >0.80 es filoso: una sola nube sobre una pileta la baja a 8/10 y la borra.
 # Publicar la banda completa muestra cuánto del resultado depende de dónde se corta.
@@ -210,7 +214,12 @@ def analizar(salar: str, osm: Path | None = None) -> dict:
             # Landsat 5 y 7 se saturan sobre la costra de sal brillante y el producto
             # L2 descarta esos píxeles. Por eso hay años sin cobertura suficiente, y
             # se marcan en vez de presentarlos como si valieran lo mismo.
-            "cuantitativo": bool(medible.mean() >= FIABLE),
+            #
+            # El año en curso además está incompleto: le faltan meses, así que la
+            # frecuencia anual no es comparable con la de un año cerrado y sale baja.
+            # No se descarta, se marca.
+            "cuantitativo": bool(medible.mean() >= FIABLE) and anio < ANIO_EN_CURSO,
+            "anio_parcial": anio >= ANIO_EN_CURSO,
             "agua_natural_permanente_km2": round(float((permanente & ya_mojado).sum()) * km2, 2),
             "agua_estacional_km2": round(
                 float((np.isfinite(wf) & (wf >= aoi.WETFREQ_NATURAL)

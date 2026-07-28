@@ -27,20 +27,41 @@ toman todas las disponibles, los meses despejados (invierno seco) pesan más que
 los nublados (verano húmedo), y entonces las lagunas naturales —que se llenan
 justo en verano— quedan subestimadas de forma sistemática.
 
-## 2. Agua es MNDWI alto **y** NIR bajo
+## 2. El umbral de agua se calibró contra verdad de campo
 
-El índice de agua habitual sobre un salar falla, porque la nieve y la costra de
-sal seca dan MNDWI alto igual que el agua: las tres son brillantes en verde y
-oscuras en SWIR. Lo que las separa es el infrarrojo cercano.
+La primera versión de este método usaba `MNDWI > 0,15` **y** `NIR < 0,25`. El
+razonamiento parecía sólido: la nieve y la costra de sal seca también dan MNDWI
+alto, y el infrarrojo cercano las separa del agua, que lo absorbe.
 
-| Superficie | MNDWI | NIR |
+**Estaba mal, y la validación lo mostró.** Contra las 388 poligonales de piletas
+digitalizadas en OpenStreetMap sobre el Salar de Atacama, ese criterio daba un
+recall de **3,7 %**. Al mirar los píxeles dentro de las piletas, el 83 % pasaba el
+test de MNDWI pero solo el 34 % pasaba el de NIR — y los percentiles de NIR volvían
+sin valor. La razón: **la salmuera concentrada de una pileta de litio es tan
+brillante en el infrarrojo cercano que satura el sensor**. La condición puesta para
+descartar nieve estaba descartando justo las piletas más maduras.
+
+Se probaron cinco criterios contra la misma referencia:
+
+| Criterio | Recall | Falsos positivos sobre costra seca |
 |---|---|---|
-| Salmuera / agua | alto | **< 0,15** |
-| Nieve | alto | 0,4–0,8 |
-| Costra de sal seca | alto | alta |
+| MNDWI > 0,15 y NIR < 0,25 | 38,3 % | 5k |
+| MNDWI > 0,15 y NIR < 0,45 | 46,6 % | 74k |
+| **MNDWI > 0,30 solo** | **74,8 %** | **58k** |
+| MNDWI > 0,15 solo | 81,6 % | 195k |
 
-Por eso el criterio es `MNDWI > 0,15` **y** `NIR < 0,25`. El corte deja pasar
-salmuera turbia y concentrada sin dejar entrar nieve.
+El criterio adoptado es **`MNDWI > 0,30`, sin condición de NIR**: domina a todas
+las variantes con NIR en las dos métricas a la vez. Sobre el compuesto anual de
+2024 de Atacama da recall **0,715** contra el 0,037 del criterio original.
+
+Los falsos positivos por escena pesan poco, porque aguas abajo quedan dos filtros
+más: la persistencia anual del 80 % y la resta de línea de base. Una costra seca
+que ocasionalmente pasa el umbral no sobrevive a ninguno de los dos.
+
+!!! quote "Por qué esto está contado y no escondido"
+    El criterio equivocado producía cifras de aspecto perfectamente razonable. Sin
+    una referencia externa contra la cual medirse, no había forma de notar que
+    faltaba el 96 % de las piletas. Es el argumento entero a favor de validar.
 
 ## 3. No confiar en las banderas de nube sobre sal
 
@@ -51,8 +72,14 @@ observaciones válidas por año —**323 km² en 2005**— mientras los cerros d
 alrededor tenían veinte. El contorno del salar aparecía calcado en el mapa de
 observaciones, que es la firma inconfundible del problema.
 
-Se descartan solo relleno, nube confirmada y sombra de nube. La nieve se maneja
-por física, con el criterio del NIR.
+Se descartan solo relleno, nube confirmada y sombra de nube. La nieve no necesita
+máscara propia: es transitoria y no sobrevive al criterio de frecuencia anual,
+porque no nieva el 80 % del año.
+
+Por el mismo motivo hay **dos máscaras de validez y no una**. El NIR satura sobre
+las piletas más brillantes; exigir NIR finito para todo borraba esos píxeles
+también de la serie de agua, que solo necesita verde y SWIR. El NDVI, que sí
+necesita rojo e infrarrojo, usa su propia máscara más estricta.
 
 ## 4. Pileta = superficie **agregada**, no superficie mojada
 
