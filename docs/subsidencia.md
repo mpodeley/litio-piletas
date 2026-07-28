@@ -19,7 +19,7 @@ lectura tentadora era "la banda C no sirve sobre sal húmeda".
 Era falso, y por un motivo bastante más tonto: **el track 83 no cubre el salar**.
 Su huella corta al sur de Fénix.
 
-<img src="assets/cobertura_coherencia.png" alt="cobertura del track 83" width="100%">
+<img src="../assets/cobertura_coherencia.png" alt="cobertura del track 83" width="100%">
 
 *El dato (verde) llega solo hasta una diagonal recta, que es el borde del frame.
 El salar, las piletas (contorno rojo) y Fénix (▲) quedan al norte, sin dato.
@@ -46,7 +46,7 @@ banda C.
 
 ## El resultado, y cuánto pesa
 
-<img src="assets/vel_smooth.png" alt="velocidad LOS suavizada" width="100%">
+<img src="../assets/vel_smooth.png" alt="velocidad LOS suavizada" width="100%">
 
 *Velocidad en línea de vista (mm/año). A nivel píxel el campo es **mayormente
 ruido espacialmente correlacionado**: turbulencia atmosférica de la Puna a
@@ -62,11 +62,11 @@ tendencia sostenida:
 | Concesión Fénix | ~18 mm | ~1,1 mm/año |
 | Piletas E (−66,9) | ~17 mm | ~1,3 mm/año |
 
-<img src="assets/serie_dd.png" alt="serie acumulada vs producción" width="100%">
+<img src="../assets/serie_dd.png" alt="serie acumulada vs producción" width="100%">
 
 ### Mapa interactivo
 
-<iframe src="assets/demo_subsidencia.html" width="100%" height="560"
+<iframe src="../assets/demo_subsidencia.html" width="100%" height="560"
         style="border:1px solid #444;border-radius:6px"></iframe>
 
 ---

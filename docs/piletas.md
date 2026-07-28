@@ -25,7 +25,7 @@ agua no distingue eso de una pileta construida.
 La prueba de que el número está mal es temporal: aplicado a 1990 —siete años antes
 de que Fénix existiera— el mismo método devuelve **23 km² de "piletas"**.
 
-<img src="assets/clima_vs_operacion_hombre_muerto_oscuro.png" alt="clima vs operación" width="100%">
+<img src="../assets/clima_vs_operacion_hombre_muerto_oscuro.png" alt="clima vs operación" width="100%">
 
 *Las tres superficies del salar. El agua estacional (verde) sube y baja con las
 lluvias sin relación con la operación: 1993 fue un año húmedo y 1998 uno seco.
@@ -44,13 +44,16 @@ resultado son:
 1. **Frecuencia anual de inundación** en vez de una escena suelta. Una pileta
    operada está bajo salmuera todo el año; una laguna natural respira con la
    estación.
-2. **Agua = índice alto Y infrarrojo cercano bajo.** Sin la segunda condición, la
-   nieve y la costra de sal seca se cuentan como agua: las tres son brillantes en
-   verde y oscuras en SWIR, y solo el NIR las separa.
+2. **El umbral de agua se calibró contra las 388 piletas digitalizadas de OSM**,
+   no se eligió a ojo. La primera versión sumaba una condición sobre el infrarrojo
+   cercano para descartar nieve, y resultó desastrosa: la salmuera concentrada es
+   tan brillante en el NIR que satura el sensor, así que esa condición borraba
+   justo las piletas más maduras y el recall caía a 0,037. Ver
+   [Método](metodo.md#2-el-umbral-de-agua-se-calibro-contra-verdad-de-campo).
 
 ## El resultado
 
-<img src="assets/piletas_series_oscuro.png" alt="serie de piletas por salar" width="100%">
+<img src="../assets/piletas_series_oscuro.png" alt="serie de piletas por salar" width="100%">
 
 Superficie de piletas en 2025, el último año calendario cerrado:
 
@@ -79,7 +82,7 @@ capas de OpenStreetMap para comparar contra una referencia independiente: en
 naranja las piletas digitalizadas, en verde las lagunas naturales que sirven de
 control negativo.
 
-<iframe src="assets/mapa_atacama.html" width="100%" height="580"
+<iframe src="../assets/mapa_atacama.html" width="100%" height="580"
         style="border:1px solid #444;border-radius:6px"></iframe>
 
 Mapas equivalentes de los demás salares:
