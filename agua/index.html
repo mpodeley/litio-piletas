@@ -407,10 +407,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
+  <a href="#resultado-lo-contrario-de-lo-esperado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resultado
+        Resultado: lo contrario de lo esperado
       
     </span>
   </a>
@@ -593,10 +593,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
+  <a href="#resultado-lo-contrario-de-lo-esperado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resultado
+        Resultado: lo contrario de lo esperado
       
     </span>
   </a>
@@ -648,40 +648,47 @@ virgen, el driver dominante es regional y no la operación.</p>
 <thead>
 <tr>
 <th>Salar</th>
-<th>Arranque de la operación</th>
+<th>Estado de la operación</th>
 <th>Rol en el contraste</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Atacama (Chile)</td>
-<td>1984</td>
+<td>Produce desde 1984</td>
 <td>Operación madura, cuatro décadas</td>
 </tr>
 <tr>
 <td>Hombre Muerto</td>
-<td>1997</td>
+<td>Produce desde 1997</td>
 <td>Operación madura argentina</td>
 </tr>
 <tr>
 <td>Olaroz-Cauchari</td>
-<td>2015 / 2023</td>
-<td>Intermedia, dos operaciones de distinta edad en la misma cuenca</td>
-</tr>
-<tr>
-<td>Rincón</td>
-<td>2022</td>
-<td>Reciente</td>
+<td>Produce desde 2015 / 2023</td>
+<td>Intermedia: dos operaciones de distinta edad en la misma cuenca</td>
 </tr>
 <tr>
 <td>Centenario-Ratones</td>
-<td>2024</td>
-<td>Prácticamente sin historia — <strong>control negativo natural</strong></td>
+<td>Produce desde fines de 2024</td>
+<td>Prácticamente sin historia</td>
+</tr>
+<tr>
+<td>Rincón</td>
+<td><strong>Sin producción comercial</strong></td>
+<td><strong>Control negativo</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Rincón y Centenario son la clave del diseño: si sus vegas se comportan igual que
-las de Hombre Muerto y Atacama, el clima explica lo que se ve.</p>
+<p>Rincón es la pieza clave del diseño, y conviene ser preciso sobre por qué. El
+informe de la Secretaría de Minería de junio de 2025 lista <strong>seis</strong> proyectos
+argentinos en producción, y el Rincón no es ninguno de ellos: aparece en
+Construcción (Argosy Minerals) y en Factibilidad (Rio Tinto). Lo que hay en el
+terreno es una planta piloto.</p>
+<p>Eso lo convierte en la prueba que el método puede fallar. Si en el Rincón
+aparecen piletas al mismo ritmo que en un salar que sí opera, entonces lo que se
+está midiendo no son piletas. Y si sus vegas se retraen igual que las de Hombre
+Muerto y Atacama, el driver es el clima y no la operación.</p>
 <h2 id="como-se-mide">Cómo se mide</h2>
 <p>A 4.000 m de altura cualquier píxel con NDVI apreciable es vega o bofedal — no hay
 otra vegetación posible. Alcanza un umbral simple, sin clasificador.</p>
@@ -694,16 +701,75 @@ otra vegetación posible. Alcanza un umbral simple, sin clasificador.</p>
 </ul>
 <p>Se usa el NDVI <strong>máximo</strong> del año y no el medio, porque la vega se ve en el pico
 de la temporada húmeda; promediar con los meses secos la diluye.</p>
-<h2 id="resultado">Resultado</h2>
-<p>Se reporta la tendencia de ambas métricas por salar, y el contraste entre ellos.
-<strong>Se publica igual si da nulo</strong>: que no se detecte impacto atribuible es un
-resultado, y probablemente el más honesto que el dato admite.</p>
-<div class="admonition info">
-<p class="admonition-title">Estado</p>
-<p>Las series de vegas se calculan con <code>pipeline/03_agua_vegas.py</code> sobre los
-mismos compuestos anuales del caso 1, así que salen del mismo dato y con la
-misma máscara. Los resultados se publican junto con las tendencias por salar.</p>
+<h2 id="resultado-lo-contrario-de-lo-esperado">Resultado: lo contrario de lo esperado</h2>
+<table>
+<thead>
+<tr>
+<th>Salar</th>
+<th>Operación</th>
+<th>Piletas (km²)</th>
+<th>Vega estable (km²)</th>
+<th><strong>Tendencia NDVI/año</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hombre Muerto</td>
+<td>desde 1997</td>
+<td>9,0</td>
+<td>13,3</td>
+<td><strong>+0,00088</strong></td>
+</tr>
+<tr>
+<td>Atacama</td>
+<td>desde 1984</td>
+<td>30,3</td>
+<td>15,8</td>
+<td><strong>+0,00085</strong></td>
+</tr>
+<tr>
+<td>Olaroz-Cauchari</td>
+<td>desde 2015</td>
+<td>9,2</td>
+<td>170,0</td>
+<td><strong>+0,00064</strong></td>
+</tr>
+<tr>
+<td>Centenario-Ratones</td>
+<td>desde fines 2024</td>
+<td>0,0</td>
+<td>15,7</td>
+<td><strong>+0,00140</strong></td>
+</tr>
+<tr>
+<td><strong>Rincón</strong></td>
+<td><strong>sin producción comercial</strong></td>
+<td>0,4</td>
+<td>23,4</td>
+<td><strong>−0,00107</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>El único salar donde la vegetación retrocede es el único que no tiene operación
+comercial.</strong> Los cuatro que producen —incluido Atacama, con cuatro décadas y el
+triple de piletas que cualquier salar argentino— tienen tendencia positiva.</p>
+<p>Eso no confirma la hipótesis de que la extracción de litio seca las vegas. La
+contradice, al menos en la forma simple en que suele plantearse.</p>
+<div class="admonition warning">
+<p class="admonition-title">Qué significa y qué no</p>
+<p><strong>No</strong> significa que la minería de litio no tenga impacto hídrico. Significa
+que <strong>la extensión y el vigor de las vegas, medidos desde el satélite, no
+ordenan a los salares por intensidad de operación</strong>. Si hubiera un efecto
+dominante y de gran escala, debería verse acá y no se ve.</p>
+<p>Las tendencias además son chicas —del orden de 10⁻³ de NDVI por año— y las
+superficies de vega no son comparables entre salares: Olaroz-Cauchari tiene
+170 km² de vega estable y Hombre Muerto 13. Son cuencas distintas.</p>
+<p>Un efecto local, acotado a los alrededores inmediatos de un campo de pozos,
+podría existir y quedar diluido en un promedio de cuenca. Esto no lo descarta.</p>
 </div>
+<p>Este es exactamente el tipo de resultado que se publica igual. El diseño
+comparativo se armó para poder fallar, y falló en la dirección opuesta a la
+esperada: eso es información.</p>
 <div class="admonition danger">
 <p class="admonition-title">Lo que este análisis no puede decir</p>
 <p>No mide caudal, no mide agua subterránea —GRACE-FO tiene 300 km de resolución,
