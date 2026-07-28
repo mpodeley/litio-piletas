@@ -1,0 +1,11 @@
+# Caché de compuestos anuales: se regenera con pipeline/01_composites.py.
+# Son decenas de GB de GeoTIFF y no van al repo.
+_data/
+
+# Sitio construido
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

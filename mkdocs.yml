@@ -1,0 +1,53 @@
+site_name: Litio desde el espacio
+site_description: >-
+  Qué se puede medir de una operación de litio con satélites públicos: expansión
+  de piletas de evaporación, agua natural y vegas, y respuesta del salar a la
+  extracción de salmuera. Salares argentinos y Atacama como referencia.
+site_url: https://mpodeley.github.io/litio-satelital/
+repo_url: https://github.com/mpodeley/litio-satelital
+repo_name: mpodeley/litio-satelital
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Panorama: index.md
+  - Caso 1 — Piletas de evaporación: piletas.md
+  - Caso 1b — Agua y vegas: agua.md
+  - Caso 2 — Subsidencia del salar: subsidencia.md
+  - Método: metodo.md
+  - Datos y fuentes: datos.md
+  - Límites: limites.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - md_in_html
+  - footnotes
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mpodeley
