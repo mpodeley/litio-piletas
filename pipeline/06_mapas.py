@@ -64,7 +64,10 @@ def _png_b64(rgba: np.ndarray) -> str:
 
 
 def _leyenda(a0: int, a1: int, res: dict) -> str:
-    ult = res["serie"][-1]
+    # Último año CERRADO: el año en curso tiene menos pasadas y da una cifra más baja
+    # que no es comparable con la de un año completo.
+    cerrados = [f for f in res["serie"] if not f.get("anio_parcial")]
+    ult = (cerrados or res["serie"])[-1]
     v = res.get("validacion_osm", {})
     val = (f"Validado contra {v['referencia']} de OSM: recall {v['recall']}, "
            f"precisión {v['precision']}." if v.get("referencia")

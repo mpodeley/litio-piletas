@@ -250,14 +250,19 @@ def analizar(salar: str, osm: Path | None = None) -> dict:
     # `landuse=salt_pond` es la referencia positiva de verdad (Atacama tiene 388).
     # Donde solo hay `landuse=industrial` (Hombre Muerto), eso es la huella de la
     # concesión, no las piletas, y compararse contra eso no mide nada.
-    pred = mascaras[-1]
+    # Validar contra el último año CUANTITATIVO, no contra el último a secas: el año
+    # en curso está incompleto y da menos observaciones, así que valida de menos.
+    i_val = max((i for i, f in enumerate(serie) if f["cuantitativo"]), default=len(serie) - 1)
+    pred = mascaras[i_val]
+    anio_val = anios[i_val]
+
     ref = rasterizar_osm(osm, perfil, ("landuse=salt_pond", "landuse=salt_works")) if osm else None
     if ref is not None and ref.any():
         vp = int((pred & ref).sum())
         fp = int((pred & ~ref).sum())
         fn = int((~pred & ref).sum())
         res["validacion_osm"] = {
-            "anio": anios[-1],
+            "anio": anio_val,
             "referencia": "landuse=salt_pond",
             "poligonos_osm_km2": round(float(ref.sum()) * km2, 2),
             "precision": round(vp / max(vp + fp, 1), 3),

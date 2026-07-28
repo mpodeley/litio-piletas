@@ -49,6 +49,16 @@ TEMA = {
 }
 
 
+def _cerrados(serie: list[dict]) -> list[dict]:
+    """Solo años calendario completos.
+
+    El año en curso tiene menos pasadas y su frecuencia anual sale más baja, así que
+    graficarlo al lado de años cerrados inventa una caída que no existe: en Atacama,
+    30,3 km² en 2025 contra 11,0 en el 2026 incompleto.
+    """
+    return [f for f in serie if not f.get("anio_parcial")]
+
+
 def _figura(t: dict, alto: float = 5.4, ancho: float = 9.6):
     fig, ax = plt.subplots(figsize=(ancho, alto))
     fig.patch.set_facecolor(t["surface"])
@@ -72,11 +82,20 @@ def _sombrear_no_cuantitativo(ax, t: dict, x0: int, texto: bool = True) -> None:
                 ha="center", va="top", fontsize=8, color=t["ink2"], style="italic")
 
 
-def _etiqueta_final(ax, x, y, texto, color, t, dy=0.0):
-    """Marca de color al final de la línea + texto en tinta (no en el color de la serie)."""
+def _etiqueta_final(ax, x, y, texto, color, t, dy=0.0, ancho_x=1.0):
+    """Marca de color al final de la línea + texto en tinta (no en el color de la serie).
+
+    Si la etiqueta se corrió para no pisarse con otra, va una línea guía en el color
+    de la serie: con dos salares terminando en 9,0 y 9,2 km², los puntos se
+    superponen y sin guía no se sabe cuál etiqueta corresponde a cuál.
+    """
     ax.plot([x], [y], "o", color=color, markersize=6, zorder=5,
             markeredgecolor=t["surface"], markeredgewidth=1.5)
-    ax.annotate(f" {texto}", (x, y + dy), color=t["ink"], fontsize=9,
+    x_txt = x + ancho_x
+    if abs(dy) > 1e-9:
+        ax.plot([x, x_txt], [y, y + dy], color=color, linewidth=0.9,
+                alpha=0.75, zorder=4, solid_capstyle="round")
+    ax.annotate(f" {texto}", (x_txt, y + dy), color=t["ink"], fontsize=9,
                 va="center", ha="left", zorder=5)
 
 
@@ -89,7 +108,7 @@ def fig_series(datos: list[dict], modo: str) -> Path:
     for r in datos:
         salar = r["salar"]
         col = aoi.SALARES[salar][t["color"]]
-        s = [(f["anio"], f["piletas_km2"]) for f in r["serie"]]
+        s = [(f["anio"], f["piletas_km2"]) for f in _cerrados(r["serie"])]
         if not s:
             continue
         xs, ys = zip(*s)
@@ -98,30 +117,32 @@ def fig_series(datos: list[dict], modo: str) -> Path:
         xmax = max(xmax, max(xs))
 
     ax.set_ylim(bottom=0)
-    _sombrear_no_cuantitativo(ax, t, min(f["anio"] for r in datos for f in r["serie"]))
+    _sombrear_no_cuantitativo(ax, t, min(f["anio"] for r in datos for f in _cerrados(r["serie"])))
 
-    # Etiquetas al final, separadas para que no se pisen.
-    finales = sorted(((r["serie"][-1]["piletas_km2"], r) for r in datos if r["serie"]),
-                     reverse=True)
-    paso = ax.get_ylim()[1] * 0.055
-    ocupado: list[float] = []
+    # Etiquetas al final, empujadas hacia abajo desde la más alta para que no se
+    # pisen. Empujar hacia arriba acumula y termina mandando etiquetas al techo.
+    finales = sorted(((_cerrados(r["serie"])[-1]["piletas_km2"], r)
+                      for r in datos if _cerrados(r["serie"])), reverse=True)
+    paso = ax.get_ylim()[1] * 0.06
+    previo = None
     for y, r in finales:
-        yy = y
-        while any(abs(yy - o) < paso for o in ocupado):
-            yy += paso * 0.6
-        ocupado.append(yy)
-        nombre = aoi.SALARES[r["salar"]]["nombre"].replace("Salar del ", "").replace(
-            "Salar de ", "").replace(" (sector piletas)", "")
-        _etiqueta_final(ax, r["serie"][-1]["anio"], y, nombre,
-                        aoi.SALARES[r["salar"]][t["color"]], t, dy=yy - y)
+        yy = y if previo is None else min(y, previo - paso)
+        previo = yy
+        nombre = (aoi.SALARES[r["salar"]]["nombre"]
+                  .replace("Salar del ", "").replace("Salar de ", "")
+                  .replace("Salar ", "").replace(" (sector piletas)", ""))
+        _etiqueta_final(ax, _cerrados(r["serie"])[-1]["anio"], y, nombre,
+                        aoi.SALARES[r["salar"]][t["color"]], t, dy=yy - y,
+                        ancho_x=(xmax - ax.get_xlim()[0]) * 0.035)
 
     ax.set_xlim(right=xmax + (xmax - ax.get_xlim()[0]) * 0.28)
     ax.set_ylabel("Superficie de piletas (km²)", color=t["ink2"], fontsize=10)
-    ax.set_title("Expansión de las piletas de evaporación de litio",
-                 color=t["ink"], fontsize=13.5, pad=14, loc="left", weight="medium")
-    fig.text(0.125, 0.90, "Superficie que pasó a estar permanentemente inundada y no lo estaba "
-             "antes de la operación", color=t["ink2"], fontsize=9.5, ha="left")
-    fig.text(0.125, 0.02, "Landsat 5/7/8/9 (Collection-2 L2) vía Microsoft Planetary Computer · "
+    ax.set_title("Expansión de las piletas de evaporación de litio", color=t["ink"],
+                 fontsize=13.5, pad=30, loc="left", weight="medium")
+    ax.text(0, 1.02, "Superficie que pasó a estar permanentemente inundada y no lo estaba "
+            "antes de la operación", transform=ax.transAxes,
+            color=t["ink2"], fontsize=9.5, ha="left", va="bottom")
+    fig.text(0.125, 0.005, "Landsat 5/7/8/9 (Collection-2 L2) vía Microsoft Planetary Computer · "
              "elaboración propia", color=t["ink2"], fontsize=8, ha="left")
 
     out = ASSETS / f"piletas_series_{modo}.png"
@@ -138,7 +159,8 @@ def fig_clima_vs_operacion(datos: list[dict], salar: str, modo: str) -> Path | N
     t = TEMA[modo]
     fig, ax = _figura(t)
 
-    xs = [f["anio"] for f in r["serie"]]
+    cerr = _cerrados(r["serie"])
+    xs = [f["anio"] for f in cerr]
     capas = [
         ("piletas_km2", "Piletas de evaporación", "#2a78d6" if modo == "claro" else "#3987e5"),
         ("agua_natural_permanente_km2", "Agua natural permanente",
@@ -146,7 +168,7 @@ def fig_clima_vs_operacion(datos: list[dict], salar: str, modo: str) -> Path | N
         ("agua_estacional_km2", "Agua estacional", "#1baf7a" if modo == "claro" else "#199e70"),
     ]
     for clave, etq, col in capas:
-        ax.plot(xs, [f[clave] for f in r["serie"]], color=col, linewidth=2.0, zorder=3,
+        ax.plot(xs, [f[clave] for f in cerr], color=col, linewidth=2.0, zorder=3,
                 solid_capstyle="round", label=etq)
 
     ax.set_ylim(bottom=0)

@@ -1,0 +1,638 @@
+{
+ "generated_at": "2026-07-28T15:53:21+00:00",
+ "source": "Landsat 4/5/7/8/9 Collection-2 L2 vía Microsoft Planetary Computer",
+ "metodo": "vega = NDVI máximo anual > 0.15; intensidad sobre el conjunto estable (vega en ≥50% de los años medibles)",
+ "advertencia": "Coincidencia temporal no es causalidad. La comparación entre salares con y sin operación es lo único interpretable.",
+ "data": [
+  {
+   "salar": "hombre_muerto",
+   "nombre": "Salar del Hombre Muerto",
+   "vega_estable_km2": 13.35,
+   "serie": [
+    {
+     "anio": 1988,
+     "vegas_km2": 12.47,
+     "ndvi_medio_vega_estable": 0.3052
+    },
+    {
+     "anio": 1989,
+     "vegas_km2": 108.07,
+     "ndvi_medio_vega_estable": 0.3134
+    },
+    {
+     "anio": 1990,
+     "vegas_km2": 17.5,
+     "ndvi_medio_vega_estable": 0.3244
+    },
+    {
+     "anio": 1991,
+     "vegas_km2": 19.71,
+     "ndvi_medio_vega_estable": 0.3466
+    },
+    {
+     "anio": 1993,
+     "vegas_km2": 20.51,
+     "ndvi_medio_vega_estable": 0.3275
+    },
+    {
+     "anio": 1994,
+     "vegas_km2": 14.4,
+     "ndvi_medio_vega_estable": 0.3158
+    },
+    {
+     "anio": 1996,
+     "vegas_km2": 21.72,
+     "ndvi_medio_vega_estable": 0.3004
+    },
+    {
+     "anio": 1997,
+     "vegas_km2": 23.55,
+     "ndvi_medio_vega_estable": 0.3093
+    },
+    {
+     "anio": 1998,
+     "vegas_km2": 26.56,
+     "ndvi_medio_vega_estable": 0.2957
+    },
+    {
+     "anio": 1999,
+     "vegas_km2": 23.6,
+     "ndvi_medio_vega_estable": 0.3126
+    },
+    {
+     "anio": 2000,
+     "vegas_km2": 27.2,
+     "ndvi_medio_vega_estable": 0.3049
+    },
+    {
+     "anio": 2001,
+     "vegas_km2": 46.76,
+     "ndvi_medio_vega_estable": 0.3183
+    },
+    {
+     "anio": 2002,
+     "vegas_km2": 33.89,
+     "ndvi_medio_vega_estable": 0.2857
+    },
+    {
+     "anio": 2003,
+     "vegas_km2": 32.31,
+     "ndvi_medio_vega_estable": 0.2845
+    },
+    {
+     "anio": 2004,
+     "vegas_km2": 22.17,
+     "ndvi_medio_vega_estable": 0.2851
+    },
+    {
+     "anio": 2005,
+     "vegas_km2": 15.82,
+     "ndvi_medio_vega_estable": 0.2707
+    },
+    {
+     "anio": 2006,
+     "vegas_km2": 14.36,
+     "ndvi_medio_vega_estable": 0.2956
+    },
+    {
+     "anio": 2007,
+     "vegas_km2": 29.52,
+     "ndvi_medio_vega_estable": 0.2838
+    },
+    {
+     "anio": 2008,
+     "vegas_km2": 22.33,
+     "ndvi_medio_vega_estable": 0.301
+    },
+    {
+     "anio": 2009,
+     "vegas_km2": 13.09,
+     "ndvi_medio_vega_estable": 0.2756
+    },
+    {
+     "anio": 2010,
+     "vegas_km2": 11.67,
+     "ndvi_medio_vega_estable": 0.2824
+    },
+    {
+     "anio": 2011,
+     "vegas_km2": 30.82,
+     "ndvi_medio_vega_estable": 0.2991
+    },
+    {
+     "anio": 2012,
+     "vegas_km2": 29.21,
+     "ndvi_medio_vega_estable": 0.3201
+    },
+    {
+     "anio": 2013,
+     "vegas_km2": 38.13,
+     "ndvi_medio_vega_estable": 0.2891
+    },
+    {
+     "anio": 2014,
+     "vegas_km2": 44.86,
+     "ndvi_medio_vega_estable": 0.3542
+    },
+    {
+     "anio": 2015,
+     "vegas_km2": 139.01,
+     "ndvi_medio_vega_estable": 0.3441
+    },
+    {
+     "anio": 2016,
+     "vegas_km2": 30.08,
+     "ndvi_medio_vega_estable": 0.3216
+    },
+    {
+     "anio": 2017,
+     "vegas_km2": 126.29,
+     "ndvi_medio_vega_estable": 0.3251
+    },
+    {
+     "anio": 2018,
+     "vegas_km2": 91.77,
+     "ndvi_medio_vega_estable": 0.3269
+    },
+    {
+     "anio": 2019,
+     "vegas_km2": 54.85,
+     "ndvi_medio_vega_estable": 0.3287
+    },
+    {
+     "anio": 2020,
+     "vegas_km2": 52.66,
+     "ndvi_medio_vega_estable": 0.3423
+    },
+    {
+     "anio": 2021,
+     "vegas_km2": 93.48,
+     "ndvi_medio_vega_estable": 0.3443
+    },
+    {
+     "anio": 2022,
+     "vegas_km2": 106.94,
+     "ndvi_medio_vega_estable": 0.3729
+    },
+    {
+     "anio": 2023,
+     "vegas_km2": 69.64,
+     "ndvi_medio_vega_estable": 0.3523
+    },
+    {
+     "anio": 2024,
+     "vegas_km2": 64.74,
+     "ndvi_medio_vega_estable": 0.3302
+    },
+    {
+     "anio": 2025,
+     "vegas_km2": 61.55,
+     "ndvi_medio_vega_estable": 0.3155
+    },
+    {
+     "anio": 2026,
+     "vegas_km2": 62.03,
+     "ndvi_medio_vega_estable": 0.3473
+    }
+   ],
+   "tendencia_vegas_km2_por_anio": 1.54845,
+   "tendencia_ndvi_por_anio": 0.00088,
+   "piletas_km2_ultimo": 11.25
+  },
+  {
+   "salar": "atacama",
+   "nombre": "Salar de Atacama (sector piletas)",
+   "vega_estable_km2": 15.78,
+   "serie": [
+    {
+     "anio": 1986,
+     "vegas_km2": 24.38,
+     "ndvi_medio_vega_estable": 0.2344
+    },
+    {
+     "anio": 1988,
+     "vegas_km2": 9.88,
+     "ndvi_medio_vega_estable": 0.232
+    },
+    {
+     "anio": 1989,
+     "vegas_km2": 16.8,
+     "ndvi_medio_vega_estable": 0.2271
+    },
+    {
+     "anio": 1990,
+     "vegas_km2": 11.29,
+     "ndvi_medio_vega_estable": 0.2336
+    },
+    {
+     "anio": 1991,
+     "vegas_km2": 13.62,
+     "ndvi_medio_vega_estable": 0.2309
+    },
+    {
+     "anio": 1992,
+     "vegas_km2": 9.39,
+     "ndvi_medio_vega_estable": 0.2284
+    },
+    {
+     "anio": 1993,
+     "vegas_km2": 15.84,
+     "ndvi_medio_vega_estable": 0.2247
+    },
+    {
+     "anio": 1995,
+     "vegas_km2": 21.2,
+     "ndvi_medio_vega_estable": 0.2227
+    },
+    {
+     "anio": 1996,
+     "vegas_km2": 34.07,
+     "ndvi_medio_vega_estable": 0.2159
+    },
+    {
+     "anio": 1997,
+     "vegas_km2": 15.44,
+     "ndvi_medio_vega_estable": 0.2177
+    },
+    {
+     "anio": 1998,
+     "vegas_km2": 39.38,
+     "ndvi_medio_vega_estable": 0.2314
+    },
+    {
+     "anio": 1999,
+     "vegas_km2": 16.53,
+     "ndvi_medio_vega_estable": 0.2295
+    },
+    {
+     "anio": 2000,
+     "vegas_km2": 14.39,
+     "ndvi_medio_vega_estable": 0.2313
+    },
+    {
+     "anio": 2001,
+     "vegas_km2": 53.12,
+     "ndvi_medio_vega_estable": 0.2572
+    },
+    {
+     "anio": 2002,
+     "vegas_km2": 30.5,
+     "ndvi_medio_vega_estable": 0.2313
+    },
+    {
+     "anio": 2003,
+     "vegas_km2": 17.51,
+     "ndvi_medio_vega_estable": 0.2206
+    },
+    {
+     "anio": 2004,
+     "vegas_km2": 14.64,
+     "ndvi_medio_vega_estable": 0.2248
+    },
+    {
+     "anio": 2005,
+     "vegas_km2": 14.33,
+     "ndvi_medio_vega_estable": 0.2263
+    },
+    {
+     "anio": 2006,
+     "vegas_km2": 22.07,
+     "ndvi_medio_vega_estable": 0.2314
+    },
+    {
+     "anio": 2007,
+     "vegas_km2": 16.64,
+     "ndvi_medio_vega_estable": 0.232
+    },
+    {
+     "anio": 2008,
+     "vegas_km2": 12.39,
+     "ndvi_medio_vega_estable": 0.23
+    },
+    {
+     "anio": 2009,
+     "vegas_km2": 17.63,
+     "ndvi_medio_vega_estable": 0.2304
+    },
+    {
+     "anio": 2010,
+     "vegas_km2": 14.05,
+     "ndvi_medio_vega_estable": 0.2253
+    },
+    {
+     "anio": 2011,
+     "vegas_km2": 34.28,
+     "ndvi_medio_vega_estable": 0.2299
+    },
+    {
+     "anio": 2012,
+     "vegas_km2": 22.11,
+     "ndvi_medio_vega_estable": 0.2314
+    },
+    {
+     "anio": 2013,
+     "vegas_km2": 55.63,
+     "ndvi_medio_vega_estable": 0.2276
+    },
+    {
+     "anio": 2014,
+     "vegas_km2": 35.48,
+     "ndvi_medio_vega_estable": 0.2437
+    },
+    {
+     "anio": 2015,
+     "vegas_km2": 107.79,
+     "ndvi_medio_vega_estable": 0.2692
+    },
+    {
+     "anio": 2016,
+     "vegas_km2": 26.94,
+     "ndvi_medio_vega_estable": 0.252
+    },
+    {
+     "anio": 2017,
+     "vegas_km2": 108.99,
+     "ndvi_medio_vega_estable": 0.2774
+    },
+    {
+     "anio": 2018,
+     "vegas_km2": 47.6,
+     "ndvi_medio_vega_estable": 0.2569
+    },
+    {
+     "anio": 2019,
+     "vegas_km2": 52.81,
+     "ndvi_medio_vega_estable": 0.2472
+    },
+    {
+     "anio": 2020,
+     "vegas_km2": 62.79,
+     "ndvi_medio_vega_estable": 0.2467
+    },
+    {
+     "anio": 2021,
+     "vegas_km2": 34.79,
+     "ndvi_medio_vega_estable": 0.2419
+    },
+    {
+     "anio": 2022,
+     "vegas_km2": 80.16,
+     "ndvi_medio_vega_estable": 0.2449
+    },
+    {
+     "anio": 2023,
+     "vegas_km2": 42.6,
+     "ndvi_medio_vega_estable": 0.2632
+    },
+    {
+     "anio": 2024,
+     "vegas_km2": 36.45,
+     "ndvi_medio_vega_estable": 0.2535
+    },
+    {
+     "anio": 2025,
+     "vegas_km2": 34.94,
+     "ndvi_medio_vega_estable": 0.255
+    },
+    {
+     "anio": 2026,
+     "vegas_km2": 29.79,
+     "ndvi_medio_vega_estable": 0.2623
+    }
+   ],
+   "tendencia_vegas_km2_por_anio": 1.104,
+   "tendencia_ndvi_por_anio": 0.00085,
+   "piletas_km2_ultimo": 11.04
+  },
+  {
+   "salar": "olaroz_cauchari",
+   "nombre": "Salar de Olaroz-Cauchari",
+   "vega_estable_km2": 170.0,
+   "serie": [
+    {
+     "anio": 2004,
+     "vegas_km2": 100.21,
+     "ndvi_medio_vega_estable": 0.1784
+    },
+    {
+     "anio": 2005,
+     "vegas_km2": 149.72,
+     "ndvi_medio_vega_estable": 0.1801
+    },
+    {
+     "anio": 2006,
+     "vegas_km2": 102.03,
+     "ndvi_medio_vega_estable": 0.1754
+    },
+    {
+     "anio": 2007,
+     "vegas_km2": 28.03,
+     "ndvi_medio_vega_estable": 0.1826
+    },
+    {
+     "anio": 2008,
+     "vegas_km2": 137.24,
+     "ndvi_medio_vega_estable": 0.1743
+    },
+    {
+     "anio": 2009,
+     "vegas_km2": 23.13,
+     "ndvi_medio_vega_estable": 0.1874
+    },
+    {
+     "anio": 2010,
+     "vegas_km2": 36.58,
+     "ndvi_medio_vega_estable": 0.1837
+    },
+    {
+     "anio": 2011,
+     "vegas_km2": 177.95,
+     "ndvi_medio_vega_estable": 0.1774
+    },
+    {
+     "anio": 2012,
+     "vegas_km2": 523.17,
+     "ndvi_medio_vega_estable": 0.2105
+    },
+    {
+     "anio": 2013,
+     "vegas_km2": 189.28,
+     "ndvi_medio_vega_estable": 0.1753
+    },
+    {
+     "anio": 2014,
+     "vegas_km2": 144.28,
+     "ndvi_medio_vega_estable": 0.1743
+    },
+    {
+     "anio": 2015,
+     "vegas_km2": 382.51,
+     "ndvi_medio_vega_estable": 0.2013
+    },
+    {
+     "anio": 2017,
+     "vegas_km2": 232.88,
+     "ndvi_medio_vega_estable": 0.1864
+    },
+    {
+     "anio": 2018,
+     "vegas_km2": 206.94,
+     "ndvi_medio_vega_estable": 0.1771
+    },
+    {
+     "anio": 2019,
+     "vegas_km2": 229.6,
+     "ndvi_medio_vega_estable": 0.1831
+    },
+    {
+     "anio": 2020,
+     "vegas_km2": 357.78,
+     "ndvi_medio_vega_estable": 0.204
+    },
+    {
+     "anio": 2021,
+     "vegas_km2": 208.66,
+     "ndvi_medio_vega_estable": 0.1819
+    },
+    {
+     "anio": 2022,
+     "vegas_km2": 471.36,
+     "ndvi_medio_vega_estable": 0.2077
+    },
+    {
+     "anio": 2023,
+     "vegas_km2": 225.07,
+     "ndvi_medio_vega_estable": 0.1843
+    },
+    {
+     "anio": 2024,
+     "vegas_km2": 257.0,
+     "ndvi_medio_vega_estable": 0.19
+    },
+    {
+     "anio": 2025,
+     "vegas_km2": 252.43,
+     "ndvi_medio_vega_estable": 0.1882
+    }
+   ],
+   "tendencia_vegas_km2_por_anio": 10.97157,
+   "tendencia_ndvi_por_anio": 0.00064,
+   "piletas_km2_ultimo": 9.22
+  },
+  {
+   "salar": "rincon",
+   "nombre": "Salar del Rincón",
+   "vega_estable_km2": 23.45,
+   "serie": [
+    {
+     "anio": 2006,
+     "vegas_km2": 3.76,
+     "ndvi_medio_vega_estable": 0.2031
+    },
+    {
+     "anio": 2016,
+     "vegas_km2": 11.88,
+     "ndvi_medio_vega_estable": 0.1949
+    },
+    {
+     "anio": 2023,
+     "vegas_km2": 37.23,
+     "ndvi_medio_vega_estable": 0.1821
+    },
+    {
+     "anio": 2024,
+     "vegas_km2": 28.38,
+     "ndvi_medio_vega_estable": 0.1821
+    },
+    {
+     "anio": 2026,
+     "vegas_km2": 37.29,
+     "ndvi_medio_vega_estable": 0.1855
+    }
+   ],
+   "tendencia_vegas_km2_por_anio": 1.74377,
+   "tendencia_ndvi_por_anio": -0.00107,
+   "piletas_km2_ultimo": 0.43
+  },
+  {
+   "salar": "centenario_ratones",
+   "nombre": "Salar Centenario-Ratones",
+   "vega_estable_km2": 15.68,
+   "serie": [
+    {
+     "anio": 2004,
+     "vegas_km2": 41.87,
+     "ndvi_medio_vega_estable": 0.2358
+    },
+    {
+     "anio": 2005,
+     "vegas_km2": 14.65,
+     "ndvi_medio_vega_estable": 0.2374
+    },
+    {
+     "anio": 2006,
+     "vegas_km2": 21.05,
+     "ndvi_medio_vega_estable": 0.2392
+    },
+    {
+     "anio": 2007,
+     "vegas_km2": 136.19,
+     "ndvi_medio_vega_estable": 0.2219
+    },
+    {
+     "anio": 2008,
+     "vegas_km2": 28.62,
+     "ndvi_medio_vega_estable": 0.2275
+    },
+    {
+     "anio": 2009,
+     "vegas_km2": 16.01,
+     "ndvi_medio_vega_estable": 0.2294
+    },
+    {
+     "anio": 2010,
+     "vegas_km2": 20.62,
+     "ndvi_medio_vega_estable": 0.2244
+    },
+    {
+     "anio": 2011,
+     "vegas_km2": 94.4,
+     "ndvi_medio_vega_estable": 0.2241
+    },
+    {
+     "anio": 2012,
+     "vegas_km2": 21.98,
+     "ndvi_medio_vega_estable": 0.2208
+    },
+    {
+     "anio": 2013,
+     "vegas_km2": 27.25,
+     "ndvi_medio_vega_estable": 0.221
+    },
+    {
+     "anio": 2014,
+     "vegas_km2": 17.14,
+     "ndvi_medio_vega_estable": 0.2676
+    },
+    {
+     "anio": 2016,
+     "vegas_km2": 35.29,
+     "ndvi_medio_vega_estable": 0.254
+    },
+    {
+     "anio": 2019,
+     "vegas_km2": 18.48,
+     "ndvi_medio_vega_estable": 0.2293
+    },
+    {
+     "anio": 2020,
+     "vegas_km2": 44.14,
+     "ndvi_medio_vega_estable": 0.2674
+    }
+   ],
+   "tendencia_vegas_km2_por_anio": -0.98781,
+   "tendencia_ndvi_por_anio": 0.0014,
+   "piletas_km2_ultimo": 0.0
+  }
+ ]
+}

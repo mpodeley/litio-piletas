@@ -37,7 +37,13 @@ import aoi
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "docs" / "data"
 
-SALARES_AR = ["hombre_muerto", "olaroz_cauchari", "rincon", "centenario_ratones"]
+# Solo los salares argentinos con producción comercial y serie medible. Se dejan
+# afuera el Rincón (sin producción comercial: figura en Construcción y Factibilidad
+# en el informe de la Secretaría de Minería) y Centenario-Ratones (arrancó a fines
+# de 2024 y casi no tiene años que superen el mínimo de observaciones). Los dos
+# aportan ~0 km² de piletas, así que excluirlos no cambia la suma — pero exigir que
+# estuvieran medidos vaciaba la serie entera.
+SALARES_AR = ["hombre_muerto", "olaroz_cauchari"]
 DESFASAJES = (0, 1, 2)
 
 
