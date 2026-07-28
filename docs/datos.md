@@ -64,6 +64,16 @@ El caché ronda los 15 GB y está fuera del repo. Los productos derivados —las
 series en JSON, las figuras y los mapas— sí están versionados, así que el sitio se
 reconstruye sin bajar una sola escena.
 
+Para publicar:
+
+```bash
+mkdocs gh-deploy      # construye y empuja a la rama gh-pages
+```
+
+El workflow de GitHub Actions no está en el repo porque el token disponible no
+tiene scope `workflow` y GitHub rechaza el push de archivos bajo
+`.github/workflows/`. Con `mkdocs gh-deploy` alcanza el scope `repo`.
+
 ## Salidas
 
 | Archivo | Contenido |

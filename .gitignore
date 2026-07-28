@@ -5,6 +5,12 @@ _data/
 # Sitio construido
 site/
 
+# El workflow de deploy queda fuera del repo a propósito: el token de gh no tiene
+# scope `workflow` y GitHub rechaza el push de archivos bajo .github/workflows/.
+# Mientras tanto el sitio se publica con `mkdocs gh-deploy` (alcanza scope `repo`).
+# Cuando el token recupere el scope, sacar esta línea y pushear el archivo.
+.github/
+
 # Python
 __pycache__/
 *.pyc

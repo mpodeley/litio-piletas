@@ -58,8 +58,10 @@ Cada píxel pintado con el año en que se volvió pileta. Las capas de
 OpenStreetMap se pueden encender para comparar contra una referencia
 independiente.
 
-<iframe src="assets/mapa_hombre_muerto.html" width="100%" height="580"
-        style="border:1px solid #444;border-radius:6px"></iframe>
+!!! note "En cómputo"
+    La serie completa (5 salares × 42 años de Landsat) se está procesando. Las
+    cifras y el mapa interactivo se publican cuando termine; el método y la
+    validación de arriba no cambian.
 
 ## Validación
 
