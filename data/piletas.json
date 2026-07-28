@@ -1,0 +1,162 @@
+{
+ "generated_at": "2026-07-28T14:31:49+00:00",
+ "source": "Landsat 4/5/7/8/9 Collection-2 L2 vía Microsoft Planetary Computer",
+ "metodo": "pileta = wetfreq > 0.80 en el año Y wetfreq < 0.20 en la línea de base",
+ "data": [
+  {
+   "salar": "hombre_muerto",
+   "nombre": "Salar del Hombre Muerto",
+   "jurisdiccion": "Catamarca / Salta, Argentina",
+   "operaciones": [
+    [
+     "Fénix (FMC → Livent → Arcadium)",
+     1997
+    ],
+    [
+     "Sal de Oro (POSCO)",
+     2024
+    ]
+   ],
+   "bbox_verificado": true,
+   "anios_base": [
+    1988,
+    1989,
+    1990,
+    1991,
+    1993,
+    1994
+   ],
+   "base_previa_a_operacion": true,
+   "serie": [
+    {
+     "anio": 1988,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 6.97,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 80.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 6.71,
+     "agua_estacional_km2": 18.0
+    },
+    {
+     "anio": 1989,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 9.66,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 80.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 8.22,
+     "agua_estacional_km2": 20.52
+    },
+    {
+     "anio": 1990,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 5.44,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 78.5,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 5.13,
+     "agua_estacional_km2": 28.26
+    },
+    {
+     "anio": 1991,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 14.08,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 82.0,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 9.5,
+     "agua_estacional_km2": 20.98
+    },
+    {
+     "anio": 1993,
+     "piletas_km2": 0.74,
+     "rectangularidad": 0.255,
+     "permanente_total_km2": 9.33,
+     "sensibilidad_km2": {
+      "0.65": 1.59,
+      "0.75": 0.96,
+      "0.85": 0.14
+     },
+     "px_medibles_pct": 90.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 4.98,
+     "agua_estacional_km2": 35.28
+    },
+    {
+     "anio": 1994,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 4.95,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 84.6,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.27,
+     "agua_estacional_km2": 24.5
+    },
+    {
+     "anio": 1996,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 4.31,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 85.3,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 3.45,
+     "agua_estacional_km2": 20.25
+    },
+    {
+     "anio": 1997,
+     "piletas_km2": 0.0,
+     "rectangularidad": NaN,
+     "permanente_total_km2": 2.53,
+     "sensibilidad_km2": {
+      "0.65": 0.0,
+      "0.75": 0.0,
+      "0.85": 0.0
+     },
+     "px_medibles_pct": 74.8,
+     "cuantitativo": true,
+     "agua_natural_permanente_km2": 0.91,
+     "agua_estacional_km2": 37.53
+    }
+   ],
+   "validacion_osm": {
+    "referencia": null,
+    "nota": "OSM no tiene las piletas digitalizadas en este salar"
+   },
+   "control_negativo": {
+    "lagunas_naturales_km2": 12.89,
+    "fraccion_clasificada_como_pileta": 0.0
+   }
+  }
+ ]
+}
