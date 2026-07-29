@@ -14,12 +14,12 @@ solo una requiere registrarse.
 | **Sentinel-1 SLC** | Interferometría (caso 2) | 2014–2026 | [ASF DAAC](https://search.asf.alaska.edu/) + procesamiento HyP3 |
 | **ERA5** | Corrección troposférica del InSAR | — | [Copernicus CDS](https://cds.climate.copernicus.eu/) (registro gratuito) |
 
-Volumen disponible sobre los salares del caso, con menos de 15 % de nubes:
+Volumen disponible sobre los salares del caso, con menos de 15% de nubes:
 
 | Salar | Escenas Landsat | Escenas Sentinel-2 |
 |---|---|---|
-| Hombre Muerto | 2.233 (1985–2026) | 1.510 (2016–2026) |
-| Atacama | 2.386 (1985–2026) | 1.070 (2016–2026) |
+| Hombre Muerto | 2,233 (1985–2026) | 1,510 (2016–2026) |
+| Atacama | 2,386 (1985–2026) | 1,070 (2016–2026) |
 
 ## Vectores y referencia
 

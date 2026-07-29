@@ -48,12 +48,12 @@ Muerto y Atacama, el driver es el clima y no la operación.
 
 ## Cómo se mide
 
-A 4.000 m de altura cualquier píxel con NDVI apreciable es vega o bofedal — no hay
+A 4,000 m de altura cualquier píxel con NDVI apreciable es vega o bofedal — no hay
 otra vegetación posible. Alcanza un umbral simple, sin clasificador.
 
 Se miden dos cosas distintas:
 
-- **Extensión** — superficie con NDVI máximo anual por encima de 0,15.
+- **Extensión** — superficie con NDVI máximo anual por encima de 0.15.
 - **Intensidad** — NDVI medio sobre el conjunto de píxeles que fueron vega en al
   menos la mitad de los años. Es más sensible que la extensión: un bofedal
   estresado pierde vigor antes que superficie.
@@ -65,11 +65,11 @@ de la temporada húmeda; promediar con los meses secos la diluye.
 
 | Salar | Operación | Piletas (km²) | Vega estable (km²) | **Tendencia NDVI/año** |
 |---|---|---|---|---|
-| Hombre Muerto | desde 1997 | 9,0 | 13,3 | **+0,00088** |
-| Atacama | desde 1984 | 30,3 | 15,8 | **+0,00085** |
-| Olaroz-Cauchari | desde 2015 | 9,2 | 170,0 | **+0,00064** |
-| Centenario-Ratones | desde fines 2024 | 0,0 | 15,7 | **+0,00140** |
-| **Rincón** | **sin producción comercial** | 0,4 | 23,4 | **−0,00107** |
+| Hombre Muerto | desde 1997 | 9.0 | 13.3 | **+0.00088** |
+| Atacama | desde 1984 | 30.3 | 15.8 | **+0.00085** |
+| Olaroz-Cauchari | desde 2015 | 9.2 | 170.0 | **+0.00064** |
+| Centenario-Ratones | desde fines 2024 | 0.0 | 15.7 | **+0.00140** |
+| **Rincón** | **sin producción comercial** | 0.4 | 23.4 | **−0.00107** |
 
 **El único salar donde la vegetación retrocede es el único que no tiene operación
 comercial.** Los cuatro que producen —incluido Atacama, con cuatro décadas y el

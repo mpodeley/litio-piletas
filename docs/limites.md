@@ -18,12 +18,12 @@ Medido sobre una región fija de piletas en el Salar del Hombre Muerto:
 
 | Año | Observaciones válidas | % de píxeles con ≥10 | Sensor |
 |---|---|---|---|
-| 1986 | 0 | 15 % | Landsat-5 |
-| 1998 | 7 | 31 % | Landsat-5 |
-| 2005 | 10 | 53 % | Landsat-5, 7 |
-| 2010 | 5 | 15 % | Landsat-5, 7 |
-| 2016 | 15 | 89 % | Landsat-7, 8 |
-| 2024 | 19 | 100 % | Landsat-8, 9 |
+| 1986 | 0 | 15% | Landsat-5 |
+| 1998 | 7 | 31% | Landsat-5 |
+| 2005 | 10 | 53% | Landsat-5, 7 |
+| 2010 | 5 | 15% | Landsat-5, 7 |
+| 2016 | 15 | 89% | Landsat-7, 8 |
+| 2024 | 19 | 100% | Landsat-8, 9 |
 
 Landsat-8 (2013) trae 12 bits contra los 8 de sus antecesores, y ahí el problema
 desaparece.

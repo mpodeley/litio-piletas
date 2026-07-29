@@ -24,7 +24,7 @@ antemano, mirando la coherencia.
 | | Hombre Muerto (Fénix) | Cauchari-Olaroz |
 |---|---|---|
 | Superficie | halita seca | arcilla, humedad y piletas |
-| Coherencia temporal sobre la operación | **0,85** | **0,66** |
+| Coherencia temporal sobre la operación | **0.85** | **0.66** |
 | Serie | 135 fechas, 2014–2026 | 123 fechas, 2016–2026 |
 | ¿Se puede medir la operación? | **Sí** | **No** |
 
@@ -45,7 +45,7 @@ octubre de 2014 y mayo de 2026**, MintPy/SBAS con corrección troposférica ERA5
 ### Primero, el error que casi cierra el caso
 
 La primera corrida usó el **track 83 descendente** y concluyó que el salar
-decorrelacionaba: 16 % de píxeles coherentes, **cero** sobre la operación. La
+decorrelacionaba: 16% de píxeles coherentes, **cero** sobre la operación. La
 lectura tentadora era "la banda C no sirve sobre sal húmeda".
 
 Era falso: **el track 83 no cubre el salar**. Su huella corta al sur de Fénix.
@@ -68,7 +68,7 @@ Coherencia cero porque no había nada que medir, no por la sal.*
 | Métrica | Track 83 (mal ubicado) | **Track 149 (correcto)** |
 |---|---|---|
 | Cobertura sobre el salar | ~0 (fuera del frame) | **completa** |
-| Píxeles coherentes (coh. temporal > 0,7) | ~16 % | **~85 % del AOI** |
+| Píxeles coherentes (coh. temporal > 0.7) | ~16% | **~85% del AOI** |
 | Interferogramas / fechas | 136 / 88 | **399 / 135** (2014–2026) |
 
 <img src="../assets/vel_smooth.png" alt="velocidad LOS suavizada" width="100%">
@@ -78,15 +78,15 @@ tendencia sostenida:
 
 | Zona | Acumulado 2014–2026 | Tasa |
 |---|---|---|
-| Hotspot NE (−66,99, −25,37) | ~25 mm | ~2,5 mm/año |
-| Concesión Fénix | ~18 mm | ~1,1 mm/año |
-| Piletas E (−66,9) | ~17 mm | ~1,3 mm/año |
+| Hotspot NE (−66.99, −25.37) | ~25 mm | ~2.5 mm/año |
+| Concesión Fénix | ~18 mm | ~1.1 mm/año |
+| Piletas E (−66.9) | ~17 mm | ~1.3 mm/año |
 
 <iframe src="../assets/demo_subsidencia.html" width="100%" height="560"
         style="border:1px solid #444;border-radius:6px"></iframe>
 
 Los límites, sin maquillar: **la señal está en el piso de ruido atmosférico**
-(1–2,5 mm/año es del orden del ruido por píxel, y solo se ve limpia promediando
+(1–2.5 mm/año es del orden del ruido por píxel, y solo se ve limpia promediando
 por zona); **el signo no está confirmado** —con la convención de MintPy estos
 valores serían uplift relativo, y podría ser una mezcla real de sal acumulándose
 en las piletas y extracción hundiendo otra subzona—; y con una sola geometría no
@@ -106,16 +106,16 @@ banda, sin separarse. Comparando la ventana 2018–2020:
 
 | Zona | Acumulado 2018–2020 | Coherencia |
 |---|---|---|
-| Piletas de Exar | +15,0 mm | 0,67 |
-| Vapor Basin | +32,6 mm | 0,70 |
-| Planta Sales de Jujuy | +22,2 mm | 0,62 |
-| **Terreno estable (control)** | **+14,7 mm** | 0,80 |
+| Piletas de Exar | +15.0 mm | 0.67 |
+| Vapor Basin | +32.6 mm | 0.70 |
+| Planta Sales de Jujuy | +22.2 mm | 0.62 |
+| **Terreno estable (control)** | **+14.7 mm** | 0.80 |
 
 **La operación no se distingue del control.** Todo el campo se corre junto, que
 es firma de modo común —atmósfera y referencia—, no de deformación localizada.
 
 Y sobre la serie completa las tasas aparentes son mutuamente incoherentes: Vapor
-Basin da −3,7 mm/año y Cauchari sur **+3,2** mm/año. Partes vecinas del mismo
+Basin da −3.7 mm/año y Cauchari sur **+3.2** mm/año. Partes vecinas del mismo
 salar moviéndose en direcciones opuestas con magnitudes parecidas, y con
 dispersión residual de 9 a 13 mm alrededor de la tendencia. Eso es ruido.
 
@@ -132,7 +132,7 @@ tres veces mi rango completo.
 No puedo afirmar que estén equivocados sin ver su procesamiento, y hay que decirlo
 así. Pero la diferencia tiene una explicación plausible: es un trabajo de workshop
 que usa la herramienta SBAS de un clic de ASF Vertex, sin enmascarar por
-coherencia, sobre una superficie que acá mide 0,62–0,72. **Un desenrollado de fase
+coherencia, sobre una superficie que acá mide 0.62–0.72. **Un desenrollado de fase
 defectuoso sobre píxeles decorrelacionados produce exactamente saltos de
 decímetros**, y es el modo de falla más común de esta técnica.
 

@@ -18,7 +18,7 @@ $$
 $$
 
 Una pileta operada está bajo salmuera todo el año y da wetfreq ≈ 1. Una laguna
-natural se llena y se seca con la estación, y da 0,2–0,6. Como es un cociente
+natural se llena y se seca con la estación, y da 0.2–0.6. Como es un cociente
 sobre observaciones válidas, además tolera los huecos del SLC-off de Landsat-7 y
 la cobertura parcial de escena.
 
@@ -29,14 +29,14 @@ justo en verano— quedan subestimadas de forma sistemática.
 
 ## 2. El umbral de agua se calibró contra verdad de campo
 
-La primera versión de este método usaba `MNDWI > 0,15` **y** `NIR < 0,25`. El
+La primera versión de este método usaba `MNDWI > 0.15` **y** `NIR < 0.25`. El
 razonamiento parecía sólido: la nieve y la costra de sal seca también dan MNDWI
 alto, y el infrarrojo cercano las separa del agua, que lo absorbe.
 
 **Estaba mal, y la validación lo mostró.** Contra las 388 poligonales de piletas
 digitalizadas en OpenStreetMap sobre el Salar de Atacama, ese criterio daba un
-recall de **3,7 %**. Al mirar los píxeles dentro de las piletas, el 83 % pasaba el
-test de MNDWI pero solo el 34 % pasaba el de NIR — y los percentiles de NIR volvían
+recall de **3.7%**. Al mirar los píxeles dentro de las piletas, el 83% pasaba el
+test de MNDWI pero solo el 34% pasaba el de NIR — y los percentiles de NIR volvían
 sin valor. La razón: **la salmuera concentrada de una pileta de litio es tan
 brillante en el infrarrojo cercano que satura el sensor**. La condición puesta para
 descartar nieve estaba descartando justo las piletas más maduras.
@@ -45,23 +45,23 @@ Se probaron cinco criterios contra la misma referencia:
 
 | Criterio | Recall | Falsos positivos sobre costra seca |
 |---|---|---|
-| MNDWI > 0,15 y NIR < 0,25 | 38,3 % | 5k |
-| MNDWI > 0,15 y NIR < 0,45 | 46,6 % | 74k |
-| **MNDWI > 0,30 solo** | **74,8 %** | **58k** |
-| MNDWI > 0,15 solo | 81,6 % | 195k |
+| MNDWI > 0.15 y NIR < 0.25 | 38.3% | 5k |
+| MNDWI > 0.15 y NIR < 0.45 | 46.6% | 74k |
+| **MNDWI > 0.30 solo** | **74.8%** | **58k** |
+| MNDWI > 0.15 solo | 81.6% | 195k |
 
-El criterio adoptado es **`MNDWI > 0,30`, sin condición de NIR**: domina a todas
+El criterio adoptado es **`MNDWI > 0.30`, sin condición de NIR**: domina a todas
 las variantes con NIR en las dos métricas a la vez. Sobre el compuesto anual de
-2024 de Atacama da recall **0,715** contra el 0,037 del criterio original.
+2024 de Atacama da recall **0.715** contra el 0.037 del criterio original.
 
 Los falsos positivos por escena pesan poco, porque aguas abajo quedan dos filtros
-más: la persistencia anual del 80 % y la resta de línea de base. Una costra seca
+más: la persistencia anual del 80% y la resta de línea de base. Una costra seca
 que ocasionalmente pasa el umbral no sobrevive a ninguno de los dos.
 
 !!! quote "Por qué esto está contado y no escondido"
     El criterio equivocado producía cifras de aspecto perfectamente razonable. Sin
     una referencia externa contra la cual medirse, no había forma de notar que
-    faltaba el 96 % de las piletas. Es el argumento entero a favor de validar.
+    faltaba el 96% de las piletas. Es el argumento entero a favor de validar.
 
 ## 3. No confiar en las banderas de nube sobre sal
 
@@ -74,7 +74,7 @@ observaciones, que es la firma inconfundible del problema.
 
 Se descartan solo relleno, nube confirmada y sombra de nube. La nieve no necesita
 máscara propia: es transitoria y no sobrevive al criterio de frecuencia anual,
-porque no nieva el 80 % del año.
+porque no nieva el 80% del año.
 
 Por el mismo motivo hay **dos máscaras de validez y no una**. El NIR satura sobre
 las piletas más brillantes; exigir NIR finito para todo borraba esos píxeles
@@ -84,14 +84,14 @@ necesita rojo e infrarrojo, usa su propia máscara más estricta.
 ## 4. Pileta = superficie **agregada**, no superficie mojada
 
 Umbralar wetfreq y nada más cuenta como pileta la costra que ya estaba mojada
-antes de que existiera la operación. Sobre Hombre Muerto en 2024 eso da **73,6 km²**,
+antes de que existiera la operación. Sobre Hombre Muerto en 2024 eso da **73.6 km²**,
 bastante más que las piletas reales.
 
 Una pileta no es "superficie mojada": es superficie que **pasó a estar mojada de
 forma permanente y antes no lo estaba**.
 
 ```
-pileta(año) = wetfreq(año) ≥ 0,80   Y   wetfreq_base < 0,20
+pileta(año) = wetfreq(año) ≥ 0.80   Y   wetfreq_base < 0.20
 ```
 
 El agua natural permanente estaba mojada también en la base, así que queda afuera
@@ -112,23 +112,23 @@ hasta en un año seco es agua natural permanente de verdad.
 ## 5. Filtros de forma y de confianza
 
 - **Limpieza morfológica** (apertura y cierre) y descarte de cuerpos menores a
-  1,8 ha: las piletas son cuerpos grandes y compactos.
+  1.8 ha: las piletas son cuerpos grandes y compactos.
 - **Mínimo de diez observaciones** por píxel y año. Con pocas pasadas la
   frecuencia está sesgada *hacia arriba*: con cuatro observaciones, wetfreq solo
-  puede valer 0, 0,25, 0,5, 0,75 o 1, y llegar a 1 es fácil. Los píxeles peor
+  puede valer 0, 0.25, 0.5, 0.75 o 1, y llegar a 1 es fácil. Los píxeles peor
   observados son justo los que más se cuelan como "agua permanente".
 - **Persistencia de dos años** para el mapa de año de aparición: una inundación
   puntual no cuenta como nacimiento de una pileta.
 
 ## 6. Qué se publica al lado de cada cifra
 
-- **Banda de sensibilidad**: la misma superficie recalculada cortando en 0,65,
-  0,75 y 0,85, para que se vea cuánto del resultado depende de dónde se corta.
+- **Banda de sensibilidad**: la misma superficie recalculada cortando en 0.65,
+  0.75 y 0.85, para que se vea cuánto del resultado depende de dónde se corta.
 - **Cota superior**: la superficie permanentemente mojada sin descontar la
   natural. La cifra real está entre las dos.
 - **Rectangularidad**: qué fracción del área detectada cae en cuerpos que llenan
   su caja envolvente. Una pileta es un rectángulo; una laguna, no.
-- **Marca de año cuantitativo**: si menos del 60 % del AOI llegó a diez
+- **Marca de año cuantitativo**: si menos del 60% del AOI llegó a diez
   observaciones, el año se reporta pero no se usa para conclusiones
   (ver [Límites](limites.md)).
 

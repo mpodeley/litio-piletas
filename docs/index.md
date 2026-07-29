@@ -44,7 +44,7 @@ punta a punta, con los datos y el código a la vista.
 
 | Qué se mide | Cómo | Sensor | Nota |
 |---|---|---|---|
-| **Targeting de pegmatitas LCT** | Discriminación de micas de litio | EMIT, PRISMA, EnMAP | La lepidolita corre su absorción Al-OH a ~2,19 µm contra 2,20 de la moscovita: es una diferencia chica pero real, y necesita hiperespectral. Con ASTER no se separa. |
+| **Targeting de pegmatitas LCT** | Discriminación de micas de litio | EMIT, PRISMA, EnMAP | La lepidolita corre su absorción Al-OH a ~2.19 µm contra 2.20 de la moscovita: es una diferencia chica pero real, y necesita hiperespectral. Con ASTER no se separa. |
 | **Control estructural** | Lineamientos sobre DEM | Copernicus GLO-30 | Gratis, sin registro |
 | **Volumen movido** | Diferencia de DEMs | SRTM 2000 vs GLO-30 vs estéreo ASTER | Método ya validado en [Veladero](https://mpodeley.github.io/mineria-dem/) |
 
@@ -76,8 +76,8 @@ punta a punta, con los datos y el código a la vista.
 Todo lo de acá sale de archivos públicos y sin credenciales:
 
 - **Landsat 1985→hoy** y **Sentinel-2 2016→hoy**, vía el catálogo STAC de Microsoft
-  Planetary Computer. Sobre el Salar del Hombre Muerto hay 2.233 escenas Landsat
-  con menos de 15 % de nubes; sobre Atacama, 2.386.
+  Planetary Computer. Sobre el Salar del Hombre Muerto hay 2,233 escenas Landsat
+  con menos de 15% de nubes; sobre Atacama, 2,386.
 - **Sentinel-1** vía ASF, con interferogramas procesados en la nube de HyP3.
 - **Modelos de elevación** Copernicus GLO-30 desde un bucket abierto de AWS.
 - **Poligonales** de piletas e infraestructura desde OpenStreetMap.
