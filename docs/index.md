@@ -5,6 +5,10 @@ aparecen y se multiplican, lagunas que crecen o se retraen, terreno que se mueve
 unos milímetros por año. Todo eso lo registran satélites públicos, gratis, con
 archivo de cuatro décadas.
 
+!!! info "Demo comercial"
+    [Litio desde el espacio](https://podeley.github.io/sat-litio/) — `podeley/sat-litio`.
+    Este sitio es el trabajo de fondo; la demo es la versión de una página para cliente.
+
 Este sitio recorre **qué se puede medir de verdad** — y, con el mismo cuidado, qué
 no. Primero el panorama de técnicas y sensores. Después dos casos trabajados de
 punta a punta, con los datos y el código a la vista.
