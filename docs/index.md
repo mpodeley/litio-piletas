@@ -25,7 +25,7 @@ punta a punta, con los datos y el código a la vista.
 | **Expansión de piletas de evaporación** | Frecuencia anual de inundación contra línea de base | Landsat 5/7/8/9 | 30 m | ✅ [Caso 1](piletas.md) |
 | **Agua natural y estacionalidad** | Índices de agua sobre serie larga | Landsat, Sentinel-2 | 10–30 m | ✅ [Caso 1b](agua.md) |
 | **Vegas y bofedales** | NDVI en el anillo periférico | Sentinel-2 | 10 m | ✅ [Caso 1b](agua.md) |
-| **Respuesta del salar a la extracción** | InSAR / SBAS | Sentinel-1 (banda C) | 80 m | ✅ [Caso 2](subsidencia.md) — señal chica |
+| **Respuesta del salar a la extracción** | InSAR / SBAS | Sentinel-1 (banda C) | 80 m | ✅ [Caso 2](subsidencia.md) — sirve sobre halita seca, no sobre salar con arcilla |
 | **Concentración de salmuera por color** | Reflectancia por pileta a lo largo de la cadena | Sentinel-2 | 10 m | Factible, no hecho |
 | **Mineralogía de la costra** | Cocientes de bandas SWIR+TIR, SAM | ASTER, EMIT, PRISMA | 15–60 m | Factible[^1] |
 | **Balance hídrico regional** | Nieve, precipitación, masa de agua | MODIS, IMERG, GRACE-FO | 500 m – 300 km | Factible |
@@ -58,9 +58,10 @@ punta a punta, con los datos y el código a la vista.
 
 - :material-arrow-collapse-vertical: **[Subsidencia del salar](subsidencia.md)**
 
-    Si el bombeo de salmuera deja una huella medible en la superficie. Sentinel-1,
-    135 fechas entre 2014 y 2026 sobre Hombre Muerto. Respuesta corta: sí, pero
-    la señal es chica y hay que decir cuán chica.
+    Si el bombeo deja huella medible en la superficie. Dos salares, mismo sensor y
+    mismo procesamiento: en Hombre Muerto hay señal —chica, en el piso de ruido—;
+    en Cauchari-Olaroz la banda C no aguanta la superficie y el resultado es nulo.
+    Una medición publicada sobre ese salar no se reproduce.
 
 </div>
 
