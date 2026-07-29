@@ -168,4 +168,4 @@ descomponer en vertical y este-oeste.
 
 !!! info "Procesamiento completo"
     Scripts, configuraciones y series están en el repo hermano
-    [litio-insar](https://mpodeley.github.io/litio-insar/).
+    [litio-subsidencia](https://mpodeley.github.io/litio-subsidencia/).

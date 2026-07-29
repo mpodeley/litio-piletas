@@ -3,9 +3,9 @@ site_description: >-
   Qué se puede medir de una operación de litio con satélites públicos: expansión
   de piletas de evaporación, agua natural y vegas, y respuesta del salar a la
   extracción de salmuera. Salares argentinos y Atacama como referencia.
-site_url: https://mpodeley.github.io/litio-satelital/
-repo_url: https://github.com/mpodeley/litio-satelital
-repo_name: mpodeley/litio-satelital
+site_url: https://mpodeley.github.io/litio-piletas/
+repo_url: https://github.com/mpodeley/litio-piletas
+repo_name: mpodeley/litio-piletas
 
 theme:
   name: material

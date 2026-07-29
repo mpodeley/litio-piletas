@@ -44,8 +44,8 @@ argentinas), y los reportes anuales de SQM y Albemarle para Atacama.
 ## Reproducir
 
 ```bash
-git clone https://github.com/mpodeley/litio-satelital
-cd litio-satelital
+git clone https://github.com/mpodeley/litio-piletas
+cd litio-piletas
 mamba env create -f pipeline/environment.yml && conda activate litio-sat
 
 cd pipeline

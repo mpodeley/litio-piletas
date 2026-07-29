@@ -13,7 +13,7 @@ Capas:
   · Piletas del último año — contorno
   · Poligonales de OpenStreetMap — referencia independiente
 
-Sigue el patrón de litio-insar/docs/pipeline/04_export_visual.py: overlay PNG
+Sigue el patrón de litio-subsidencia/docs/pipeline/04_export_visual.py: overlay PNG
 embebido en base64 sobre un TileLayer, leyenda flotante con el caveat adentro.
 """
 

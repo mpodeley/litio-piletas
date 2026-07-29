@@ -11,7 +11,7 @@ La cobertura de OSM en la Puna es despareja: Hombre Muerto está bien mapeado y 
 salares nuevos casi no tienen nada. Donde no hay polígonos, la validación cuantitativa
 no se puede hacer y hay que decirlo en vez de inventar una referencia.
 
-Adaptado de litio-insar/docs/pipeline/overlay_osm.py (que cubría un solo AOI).
+Adaptado de litio-subsidencia/docs/pipeline/overlay_osm.py (que cubría un solo AOI).
 Sin dependencias externas: urllib de la stdlib.
 """
 
@@ -65,7 +65,7 @@ def _consultar(q: str) -> dict:
                 req = urllib.request.Request(
                     url, data=b"data=" + urllib.parse.quote(q).encode(),
                     headers={"Content-Type": "application/x-www-form-urlencoded",
-                             "User-Agent": "litio-satelital/0.1 (github.com/mpodeley)"})
+                             "User-Agent": "litio-piletas/0.1 (github.com/mpodeley)"})
                 with urllib.request.urlopen(req, timeout=200) as r:
                     return json.load(r)
             except Exception as ex:
